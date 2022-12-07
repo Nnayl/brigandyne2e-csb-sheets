@@ -38,7 +38,7 @@ Le module contient deux compendiums (Actors Templates et Item Templates)
 
 Lorsque vous souhaitez créer un nouvel acteur, dans la fenêtre "Créer un acteur" il faut sélectionner le type "character". Cela génère une nouvelle fiche vierge dans laquelle il faut spécifier le Template à utiliser (PJ Template ou PNJ Template), puis cliquez sur le bouton de rafraichissement. Une fois fait, la nouvelle fiche est prête à être utilisée.
 
-<p align="center"><img src="https://github.com/Nnayl/brigandyne2e-csb-sheets/blob/media/new-actor.jpg" width="400"><img src="https://github.com/Nnayl/brigandyne2e-csb-sheets/blob/media/use_template.jpg" width="400"></p>
+<p align="center"><img src="https://github.com/Nnayl/brigandyne2e-csb-sheets/blob/media/new-actor.jpg" height="300"><img src="https://github.com/Nnayl/brigandyne2e-csb-sheets/blob/media/use-template.jpg" width="300"></p>
 
 <p style="border: 1px solid #218bff; background-color: #e6ffec; padding: 10px"><span style="font-weight: bold;">Note</span> : que le champ Template n'est disponible que pour le MJ et que lorsque le Template d'origine est modifié, il est nécessaire de rafraichir le Template sélectionné afin d'apporter les modifications du Template sur la fiche.</p>
 
