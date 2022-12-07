@@ -144,6 +144,50 @@ Les jets de magie, comme pour le combat, apporte le lien du sort utilisé ainsi 
 
 Pour que les liens fonctionnent correctement dans les messages, il est nécessaire que les objets soient disponibles dans l'onglet "Objets" de la partie Foundry VTT.
 
+## Onjets et "item Modifiers"
+
+Chaque fiche objet possède un bouton "Item Modifiers", hérité du système **Custom System Builder**, qui permet de renseigner des formules qui impacteront la fiche personnage en fonction des éléments présents sur la fiche objet. Voici comment les utiliser.
+
+<p align="center"><img src="https://github.com/Nnayl/brigandyne2e-csb-sheets/blob/media/item-modifiers.jpg" height="200"></p>
+
+#### La fenêtre Configure Modifiers
+
+Il s'agit d'un tableau d'éléments dont chaque élément contient quatre propriétés.
+- Prio. : Correspond à l'ordre de priorité de chargement
+- Key : Fait référence à la clé de l'élément à modifier sur la fiche de personnage
+- Op. : Indique quel opérateur utiliser
+- Value formula : Représente la formule qui sera exécutée
+
+Ci-après les propriétés à remplir. [X] doit être remplacé par la valeur que vous souhaitez appliquer, elle peut être négative.
+
+#### L'encombrement
+
+Peut-être appliqué sur tous les objets créés à partir des Templates Armes, Armures et Objets.
+
+- Encombrement
+  - Key : current_enc
+  - Op. : +
+  - Formula : ${item_enc}$
+
+#### Les Armures
+
+Avec le objets armures il est possible de calculer directement la protection d'un personnage, le malus d'initiative et de Mouvement.
+
+- Protection
+  - Key : current_armor
+  - Op. : +
+  - Formula : ${item_equiped ? armor_value : 0}$
+- Initiative
+  - Key : char_init
+  - Op. : +
+  - Formula : ${item_equiped ? [X] : 0}$
+- Mouvement
+  - Key : skill_end_mou
+  - Op. : +
+  - Formula : ${item_equiped ? [X] : 0}$
+
+<p align="center"><img src="https://github.com/Nnayl/brigandyne2e-csb-sheets/blob/media/set-item-modifiers.jpg" width="250"></p>
+
 ## Limitation
 
 Du fait qu'un système est en cours de développement pour Brigandyne 2 je n'ai pas cherché à passer plus de temps sur les automatisations. Mis à part quelques valeurs calculées, il n'y a pas d'interaction dynamique entre les résultats de dés et les attributs dans les fiches. 
