@@ -32,6 +32,10 @@ Le module contient deux compendiums (Actors Templates et Item Templates)
 - **Actors Templates** contient deux acteurs (PJ Template et PNJ Template) sur lesquelles le système va s'appuyer pour générer les fiches de personnage joueur ou non-joueur. Ces fiches ne doivent pas être utilisées en tant que tel.
 - **Items Templates** contient huit objets qui serviront à générer votre équipement, vos sort et différents éléments de jeu.
 
+#### Récupérer les Templates
+
+Le module utilise **Compendium Folder** pour organiser les différents templates dans des dossiers. Lorsque vous récupérez le contenu des compendiums, veillez à utiliser la fonctionnalité d'import de **Compendium Folder** et assurez vous que les cases "Merge by name" et "Keep ID" soient cochées.
+
 #### Configuration
 
 Avant toute chose, après avoir créé votre partie avec le système de jeu **Custom System Builder** et activé le module **Bigandyne 2 - CSB - Feuilles de Personnages**, il est nécessaire d'apporter quelques éléments à la configuration de la partie.
