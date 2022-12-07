@@ -45,13 +45,13 @@ Dans "Configuration des options de la partie" > "Custom System Builder" il faut 
 - CSS Style file : modules\brigandyne2e-csb-sheets\brigandyne2-sheets.css (à saisir à la main, l'explorateur de fichier de Foundry VTT ne prend pas en charge les CSS)
 - Roll Icons : dice-d20
 
-<p align="center"><img src="https://github.com/Nnayl/brigandyne2e-csb-sheets/blob/media/csb-config.jpg" height="200"></p>
+<p align="center"><img src="../media/csb-config.jpg" height="200"></p>
 
 #### Créer un acteur
 
 Lorsque vous souhaitez créer un nouvel acteur, dans la fenêtre "Créer un acteur" il faut sélectionner le type "character". Cela génère une nouvelle fiche vierge dans laquelle il faut spécifier le Template à utiliser (PJ Template ou PNJ Template), puis cliquez sur le bouton de rafraichissement. Une fois fait, la nouvelle fiche est prête à être utilisée.
 
-<p align="center"><img src="https://github.com/Nnayl/brigandyne2e-csb-sheets/blob/media/new-actor.jpg" height="150"><img src="https://github.com/Nnayl/brigandyne2e-csb-sheets/blob/media/use-template.jpg" height="150"></p>
+<p align="center"><img src="../media/new-actor.jpg" height="150"><img src="../media/use-template.jpg" height="150"></p>
 
 **Note** : Le champ Template n'est disponible que pour le MJ. Lorsque le Template d'origine est modifié il est nécessaire de rafraichir le Template sélectionné afin d'apporter les modifications sur la fiche.
 
@@ -69,7 +69,7 @@ Les fiches, qu'elles soient des acteurs ou des objets, sont composées des même
 
 ## 1. Feuille PJ
 
-<p align="center"><img src="https://github.com/Nnayl/brigandyne2e-csb-sheets/blob/media/pj-sheet.jpg" width="400"></p>
+<p align="center"><img src="../media/pj-sheet.jpg" width="400"></p>
 
 La feuille de personnage est consitituée de 6 onglets. (Informations Génrales, Atouts, Equipements, Magie, Péripéties, Biographie).
 
@@ -99,7 +99,7 @@ Ici sont compilées les informations correspondant à l'identité du personnage,
 
 ## Feuille PNJ
 
-<p align="center"><img src="https://github.com/Nnayl/brigandyne2e-csb-sheets/blob/media/pnj-sheet.jpg" width="400"></p>
+<p align="center"><img src="../media/pnj-sheet.jpg" width="400"></p>
 
 La feuille de personnage non-joueur a été simplifié au regard de ce qui est disponible dans Brigandyne 2. Elle comprend toutes les informations essentielles nécessaires à son utilisation.
 
@@ -113,7 +113,7 @@ Les fiches de PJ et de PNJ contiennent des symboles de D20 qui permettent d'effe
 
 Lors d'un jet de dés, une fenêtre s'affiche afin d'y renseigner les éventuels modificateurs et avantages/désavantages.
 
-<p align="center"><img src="https://github.com/Nnayl/brigandyne2e-csb-sheets/blob/media/modif-dialog.jpg" width="200"></p>
+<p align="center"><img src="../media/modif-dialog.jpg" width="200"></p>
 
 #### Résultat de Compétence
 
@@ -125,7 +125,7 @@ Le résultat du jet s'affiche dans la liste des messages et présente quelques i
 - Les chances de réussite, accompagné de la somme des modificateurs entre paranthèses
 - Le Résultat des Unités. Entre paranthèse est disponible le résultat de l'explosion en cas de critique
 
-<p align="center"><img src="https://github.com/Nnayl/brigandyne2e-csb-sheets/blob/media/skill-result.jpg" width="200"></p>
+<p align="center"><img src="../media/skill-result.jpg" width="200"></p>
 
 #### Résultat de Combat
 
@@ -136,13 +136,13 @@ Les jets de combats présente des informations complémentaires
 - les dégats de l'arme ainsi qu'entre paranthèse les dégâts calculés (RU + Dégâts Arme)
 - L'allonge de l'arme
 
-<p align="center"><img src="https://github.com/Nnayl/brigandyne2e-csb-sheets/blob/media/fight-result.jpg" width="200"></p>
+<p align="center"><img src="../media/fight-result.jpg" width="200"></p>
 
 #### Résultat de Magie
 
 Les jets de magie, comme pour le combat, apporte le lien du sort utilisé ainsi que la description de ce dernier.
 
-<p align="center"><img src="https://github.com/Nnayl/brigandyne2e-csb-sheets/blob/media/magic-result.jpg" width="200"></p>
+<p align="center"><img src="../magic-result.jpg" width="200"></p>
 
 #### Objets liés
 
@@ -152,7 +152,7 @@ Pour que les liens fonctionnent correctement dans les messages, il est nécessai
 
 Chaque fiche objet possède un bouton "Item Modifiers", hérité du système **Custom System Builder**, qui permet de renseigner des formules qui impacteront la fiche personnage en fonction des éléments présents sur la fiche objet. Voici comment les utiliser.
 
-<p align="center"><img src="https://github.com/Nnayl/brigandyne2e-csb-sheets/blob/media/item-modifiers.jpg" height="200"></p>
+<p align="center"><img src="../media/item-modifiers.jpg" height="200"></p>
 
 #### La fenêtre Configure Modifiers
 
@@ -190,7 +190,7 @@ Avec le objets armures il est possible de calculer directement la protection d'u
   - Op. : +
   - Formula : ```${item_equiped ? [X] : 0}$```
 
-<p align="center"><img src="https://github.com/Nnayl/brigandyne2e-csb-sheets/blob/media/set-item-modifiers.jpg" width="250"></p>
+<p align="center"><img src="../media/set-item-modifiers.jpg" width="250"></p>
 
 ## Limitation
 
