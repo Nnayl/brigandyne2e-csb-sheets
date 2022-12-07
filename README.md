@@ -139,7 +139,7 @@ Les jets de magie, comme pour le combat, apporte le lien du sort utilisé ainsi 
 
 <p align="center"><img src="https://github.com/Nnayl/brigandyne2e-csb-sheets/blob/media/magic-result.jpg" width="200"></p>
 
-#### Onjets liés
+#### Objets liés
 
 Pour que les liens fonctionnent correctement dans les messages, il est nécessaire que les objets soient disponibles dans l'onglet "Objets" de la partie Foundry VTT.
 
