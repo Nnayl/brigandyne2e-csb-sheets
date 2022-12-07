@@ -34,11 +34,11 @@ Le module contient deux compendiums (Actors Templates et Item Templates)
 
 #### Configuration
 
-Avant toute chose, après avoir créé votre partie avec le système de jeu **Custom System Builder**, il est nécessaire d'apporter quelques éléments à la configuration de ce dernier.
+Avant toute chose, après avoir créé votre partie avec le système de jeu **Custom System Builder** et activé le module **Bigandyne 2 - CSB - Feuilles de Personnages**, il est nécessaire d'apporter quelques éléments à la configuration de la partie.
 
 Dans "Configuration des options de la partie" > "Custom System Builder" il faut renseigner dans les champs :
 - Initiative Formula : char_init
-- CSS Style file : modules\brigandyne2e-csb-sheets\brigandyne2-sheets.css
+- CSS Style file : modules\brigandyne2e-csb-sheets\brigandyne2-sheets.css (à saisir à la main, l'explorateur de fichier de Foundry VTT ne prend pas en charge les CSS)
 - Roll Icons : dice-d20
 
 <p align="center"><img src="https://github.com/Nnayl/brigandyne2e-csb-sheets/blob/media/csb-config.jpg" height="200"></p>
