@@ -144,7 +144,7 @@ Les jets de magie, comme pour le combat, apporte le lien du sort utilisé ainsi 
 
 Pour que les liens fonctionnent correctement dans les messages, il est nécessaire que les objets soient disponibles dans l'onglet "Objets" de la partie Foundry VTT.
 
-## Onjets et "item Modifiers"
+## Objets et "Item Modifiers"
 
 Chaque fiche objet possède un bouton "Item Modifiers", hérité du système **Custom System Builder**, qui permet de renseigner des formules qui impacteront la fiche personnage en fonction des éléments présents sur la fiche objet. Voici comment les utiliser.
 
