@@ -148,3 +148,15 @@ Pour que les liens fonctionnent correctement dans les messages, il est nécessai
 Du fait qu'un système est en cours de développement pour Brigandyne 2 je n'ai pas cherché à passer plus de temps sur les automatisations. Mis à part quelques valeurs calculées, il n'y a pas d'interaction dynamique entre les résultats de dés et les attributs dans les fiches. 
 
 L'objectif n'est pas de créer un système avec tout son lot d'automatisation, mais simplement des ressources permettant de jouer à Brigandyne 2 sur Foundry VTT.
+
+## Compatibilité
+
+#### Health Estimate
+
+Afin que le système puisse effectuer correctement l'estimation de la vie du token, il est nécessaire de paramétrer Health Estimate comme suit :
+
+- Chemin des données de Points de vie : actor.system.attributeBar.current_hp
+
+#### Dice so Nice !
+
+Le système est nativement compatible avec ce module, toute fois (pour une raison encore indéterminée) le module prend en compte le dé d'explosion même si il n'ya à pas de critique. Cela génère pour effet de bord de voir 3 dés 10 à l'écran au lieu de 2.
