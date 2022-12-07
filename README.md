@@ -2,6 +2,10 @@
 
 Ce module a pour objectif de permettre d'intégrer au système de jeu **Custom System Builder** (CSB) les feuilles de PJ et PNJ pour le JDR Brigandyne 2 ainsi que les templates nécessaires à la création d'objets, ceci en attendant que le Système Brigandyne 2 soit intégré et disponible sur Foundry VTT.
 
+## Index
+
+[[_TOC_]]
+
 ## Dépendance
 
 - Système [Custom System Builder](https://gitlab.com/custom-system-builder/custom-system-builder/-/tree/main)
