@@ -167,7 +167,7 @@ Peut-être appliqué sur tous les objets créés à partir des Templates Armes, 
 - Encombrement
   - Key : current_enc
   - Op. : +
-  - Formula : ${item_enc}$
+  - Formula : ```${item_enc}$```
 
 #### Les Armures
 
@@ -176,15 +176,15 @@ Avec le objets armures il est possible de calculer directement la protection d'u
 - Protection
   - Key : current_armor
   - Op. : +
-  - Formula : ${item_equiped ? armor_value : 0}$
+  - Formula : ```${item_equiped ? armor_value : 0}$```
 - Initiative
   - Key : char_init
   - Op. : +
-  - Formula : ${item_equiped ? [X] : 0}$
+  - Formula : ```${item_equiped ? [X] : 0}$```
 - Mouvement
   - Key : skill_end_mou
   - Op. : +
-  - Formula : ${item_equiped ? [X] : 0}$
+  - Formula : ```${item_equiped ? [X] : 0}$```
 
 <p align="center"><img src="https://github.com/Nnayl/brigandyne2e-csb-sheets/blob/media/set-item-modifiers.jpg" width="250"></p>
 
