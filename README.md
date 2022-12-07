@@ -1,1 +1,0 @@
-Module permettant d'intégrer au système de jeu Custom System Builder (CSB) les feuilles de PJ et PNJ pour le JDR Brigandyne 2.
