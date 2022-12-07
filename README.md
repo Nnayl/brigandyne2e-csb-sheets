@@ -37,6 +37,7 @@ Le module contient deux compendiums (Actors Templates et Item Templates)
 Avant toute chose, après avoir créé votre partie avec le système de jeu **Custom System Builder**, il est nécessaire d'apporter quelques éléments à la configuration de ce dernier.
 
 Dans "Configuration des options de la partie" > "Custom System Builder" il faut renseigner dans les champs :
+- Initiative Formula : char_init
 - CSS Style file : modules\brigandyne2e-csb-sheets\brigandyne2-sheets.css
 - Roll Icons : dice-d20
 
