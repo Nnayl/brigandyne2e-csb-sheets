@@ -1,6 +1,6 @@
 # Brigandyne 2 - CSB - Feuilles de Personnages
 
-Ce module à pour objectif de permettre d'intégrer au système de jeu Custom System Builder (CSB) les feuilles de PJ et PNJ pour le JDR Brigandyne 2 ainsi que les templates nécessaires à la création d'objets, en attendant que le Système Brigandyne 2 soit intégré et disponible sur Foundry VTT.
+Ce module a pour objectif de permettre d'intégrer au système de jeu **Custom System Builder** (CSB) les feuilles de PJ et PNJ pour le JDR Brigandyne 2 ainsi que les templates nécessaires à la création d'objets, ceci en attendant que le Système Brigandyne 2 soit intégré et disponible sur Foundry VTT.
 
 ## Dépendance
 
@@ -34,7 +34,7 @@ Le module contient deux compendiums (Actors Templates et Item Templates)
 
 #### Configuration
 
-Avant toute chose, après avoir créé votre partie avec le système de jeu**Custom System Builder**, il est nécessaire d'apporter quelques éléments à la configuration de ce dernier.
+Avant toute chose, après avoir créé votre partie avec le système de jeu **Custom System Builder**, il est nécessaire d'apporter quelques éléments à la configuration de ce dernier.
 
 Dans "Configuration des options de la partie" > "Custom System Builder" il faut renseigner dans les champs :
 - CSS Style file : modules\brigandyne2e-csb-sheets\brigandyne2-sheets.css
@@ -48,7 +48,7 @@ Lorsque vous souhaitez créer un nouvel acteur, dans la fenêtre "Créer un acte
 
 <p align="center"><img src="https://github.com/Nnayl/brigandyne2e-csb-sheets/blob/media/new-actor.jpg" height="150"><img src="https://github.com/Nnayl/brigandyne2e-csb-sheets/blob/media/use-template.jpg" height="150"></p>
 
-**Note** : que le champ Template n'est disponible que pour le MJ et que lorsque le Template d'origine est modifié, il est nécessaire de rafraichir le Template sélectionné afin d'apporter les modifications sur la fiche.
+**Note** : Le champ Template n'est disponible que pour le MJ. Lorsque le Template d'origine est modifié il est nécessaire de rafraichir le Template sélectionné afin d'apporter les modifications sur la fiche.
 
 #### Créer un objet
 
@@ -56,11 +56,11 @@ Même procédure que la création d'un acteur, à la différence que le type à 
 
 #### Fonctionnement des fiches
 
-Les fiches, qu'elles soient des acteurs ou des objets, sont composées de différents éléments :
+Les fiches, qu'elles soient des acteurs ou des objets, sont composées des mêmes éléments :
 - des champs de saisie qui permettent d'enregistrer les valeurs souhaitées
-- des champs non modifiable qui contiennent des valeurs calculées (les points de vitalité, de sang-froid, etc...)
-- des listes qui acceptent des objets créés à partir des Templates prédéfinis (La liste des Spécialités qui acceptent les objets créés avec le Template Spécialité, etc...)
-- des symboles de D20 de couleur rouge qui permettent d'effectuer des jets et d'afficher le résultat dans la liste des messages.
+- des champs non modifiables qui contiennent des valeurs calculées (les points de vitalité, de sang-froid, etc...)
+- des listes qui acceptent des objets créés à partir des Templates prédéfinis (La liste des Spécialités qui acceptent uniquement les objets créés avec le Template Spécialité, etc...)
+- des symboles de D20 de couleur rouge qui permettent d'effectuer des jets et d'afficher le résultat dans les messages.
 
 ## 1. Feuille PJ
 
@@ -78,7 +78,7 @@ Présente la liste des Spécialités et des Talents du personnage. Chacune des l
 
 #### Equipements
 
-Présente l'équipement du personnage, catégorisé en quatre liste. (Armes, Armures, Vêtements, Consommables, Objets Divers)
+Présente l'équipements du personnage, catégorisés en quatre liste. (Armes, Armures, Vêtements, Consommables, Objets Divers)
 
 #### Magie
 
@@ -96,7 +96,7 @@ Ici sont compilées les informations correspondant à l'identité du personnage,
 
 <p align="center"><img src="https://github.com/Nnayl/brigandyne2e-csb-sheets/blob/media/pnj-sheet.jpg" width="400"></p>
 
-La feuille de personnage non-joueur a été simplifié au regard de ce qui est disponible dans Brigandyne 2. Elle comprend toutes les informations essentielles nécessaire à son utilisation.
+La feuille de personnage non-joueur a été simplifié au regard de ce qui est disponible dans Brigandyne 2. Elle comprend toutes les informations essentielles nécessaires à son utilisation.
 
 Les compétences, les tactiques, les Spécials et l'équipements sont disponibles dans une liste dynamique. En cliquant sur le "+" il est possible d'y rajouter des éléments.
 
@@ -106,7 +106,7 @@ Les fiches de PJ et de PNJ contiennent des symboles de D20 qui permettent d'effe
 
 **!! ATTENTION !!** - Pour que le symbole du D20 soit visible il faut bien configurer le système, voir Configuration
 
-Lors d'un jet de dé, une fenêtre s'affiche afin d'y renseigner les éventuels modificateurs et avantages/désavantages.
+Lors d'un jet de dés, une fenêtre s'affiche afin d'y renseigner les éventuels modificateurs et avantages/désavantages.
 
 <p align="center"><img src="https://github.com/Nnayl/brigandyne2e-csb-sheets/blob/media/modif-dialog.jpg" width="200"></p>
 
@@ -142,3 +142,9 @@ Les jets de magie, comme pour le combat, apporte le lien du sort utilisé ainsi 
 #### Onjets liés
 
 Pour que les liens fonctionnent correctement dans les messages, il est nécessaire que les objets soient disponibles dans l'onglet "Objets" de la partie Foundry VTT.
+
+## Limitation
+
+Du fait qu'un système est en cours de développement pour Brigandyne 2 je n'ai pas cherché à passer plus de temps sur les automatisations. Mis à part quelques valeurs calculées, il n'y a pas d'interaction dynamique entre les résultats de dés et les attributs dans les fiches. 
+
+L'objectif n'est pas de créer un système avec tout son lot d'automatisation, mais simplement des ressources permettant de jouer à Brigandyne 2 sur Foundry VTT.
