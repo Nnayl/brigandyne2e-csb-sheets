@@ -1,6 +1,6 @@
 # Brigandyne 2 - CSB - Feuilles de Personnages
 
-Ce module a pour objectif de permettre d'intégrer au système de jeu **Custom System Builder** (CSB) les feuilles de PJ et PNJ pour le JDR Brigandyne 2 ainsi que les templates nécessaires à la création d'objets, ceci en attendant que le Système Brigandyne 2 soit intégré et disponible sur Foundry VTT.
+Dans l'attente du système de jeu Brigandyne 2 pour Foundry VTT, ce module permet d'intégrer au système de jeu **Custom System Builder** (CSB) les feuilles de PJ et PNJ pour le JDR Brigandyne 2 ainsi que les templates nécessaires à la création d'objets.
 
 ## Dépendance
 
@@ -101,7 +101,7 @@ Ici sont compilées les informations correspondant à l'identité du personnage,
 
 <p align="center"><img src="../media/pnj-sheet.jpg" width="400"></p>
 
-La feuille de personnage non-joueur a été simplifié au regard de ce qui est disponible dans Brigandyne 2. Elle comprend toutes les informations essentielles nécessaires à son utilisation.
+La feuille de personnage non-joueur a été simplifiée au regard de ce qui est disponible dans Brigandyne 2. Elle comprend toutes les informations essentielles nécessaires à son utilisation.
 
 Les compétences, les tactiques, les Spécials et l'équipements sont disponibles dans une liste dynamique. En cliquant sur le "+" il est possible d'y rajouter des éléments.
 
