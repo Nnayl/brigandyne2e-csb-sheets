@@ -142,7 +142,7 @@ Les jets de combats présente des informations complémentaires
 
 Les jets de magie, comme pour le combat, apporte le lien du sort utilisé ainsi que la description de ce dernier.
 
-<p align="center"><img src="../magic-result.jpg" width="200"></p>
+<p align="center"><img src="../media/magic-result.jpg" width="200"></p>
 
 #### Objets liés
 
