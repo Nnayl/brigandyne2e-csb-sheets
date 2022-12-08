@@ -4,11 +4,11 @@
 .text_result { text-align: center;}
 .roll_skill {font-size: 16px;}
 .weapon_details { font-size: 12px; font-style: italic;}
-.editor { min-height: 30px !important}
 .icon-20 {font-size: 20px;}
 .font-18 {font-size: 18px;}
 
 /* Hack */
+.editor { min-height: 30px !important}
 .character {font-size: 11px;}
 .fa-dice-d20 {font-size: 18px;}
 input { border: 0px solid var(--color-border-light-tertiary) !important}
