@@ -192,7 +192,7 @@ Il s'agit d'un tableau d'éléments dont chaque élément contient quatre propri
 
 Il existe 8 objets préfabriqués différents dont les paramètres Item Modifiers sont déjà renseignés. Voici la liste avec leurs implications :
 - Arme
- - Encombrement, Initiative 
+  - Encombrement, Initiative 
 - Armure
   - Encombrement, Initiative, Protection, Mouvement
 - Consommable
