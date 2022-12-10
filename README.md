@@ -4,24 +4,65 @@ Dans l'attente du système de jeu Brigandyne 2 pour Foundry VTT, ce module perme
 
 ## Index
 
-- [Dépendance](#1-Dépendance)
+- [1. Dépendance](#1-Dépendance)
+- [2. Installation](#2-Installation)
+  - [2.1 Manuelle](#21-manuelle)
+- [3. Comment utiliser ce module ?](#3-comment-utiliser-ce-module)
+  - [3.1 Introduction](#31-introduction)
+  - [3.2 Contenu](#32-contenu)
+  - [3.3 Récupérer les templates](#33-récupérer-les-templates)
+  - [3.4 Configuration](#34-configuration)
+  - [3.5 Créer un acteur](#35-créer-un-acteur)
+  - [3.6 Créer un onjet](#36-créer-un-objet)
+  - [3.7 Les Objets Préfabriqués](#37-les-objets-préfabriqués)
+  - [3.8 Fonctionnent des fiches](#38-fonctionnement-des-fiches)
+- [4. Feuille PJ](#4-feuille-pj)
+  - [4.1 Information générales](#41-informations-générales)
+  - [4.2 Atouts](#42-atouts)
+  - [4.3 Equipements](#43-equipements)
+  - [4.4 Grimoire](#44-grimoire)
+  - [4.5 Péripéties](#45-péripéties)
+  - [4.6 Biographie](#46-biographie)
+  - [4.7 MJ](#47-mj)
+- [5. Feuille PNJ](#5-feuille-pnj)
+- [6. Les jets de dés](#6-les-jets-de-dés)
+  - [6.1 Résultat de compétence](#61-résultat-de-compétence)
+  - [6.2 Résultat de combat](#62-résultat-de-combat)
+  - [6.3 Résultat de magie](#63-résultat-de-magie)
+  - [6.4 Objets liés](#64-objets-liés)
+- [7. Automatisation](#7-automatisation)
+  - [7.1 Paramétrage "Item Modifiers"](#71-paramétrage-item-modifiers)
+  - [7.2 La fenêtre "Configure Modifiers"](#72-la-fenêtre-configure-modifiers)
+  - [7.3 Objets préfabriqués](#73-objets-préfabriqués)
+    - [7.3.1 Arme](#731-arme)
+    - [7.3.2 Armure](#732-armure)
+    - [7.3.3 Consommable](#733-consommable)
+    - [7.3.4 Contenant](#734-contenant)
+    - [7.3.5 Munition](#735-munition)
+    - [7.3.6 Objet divers](#736-objet-divers)
+    - [7.3.7 Peuple](#737-peuple)
+    - [7.3.8 Vêtement](#738-vêtement)
+- [8. Compatibilité](#8-compatibilité)
+  - [8.1 Health Estimate](#81-health-estimate)
+  - [8.2 Dice So Nice !](#82-dice-so-nice)
+
 
 ## 1. Dépendance
 
 - Système [Custom System Builder](https://gitlab.com/custom-system-builder/custom-system-builder/-/tree/main)
 - Module [Compendium Folder](https://github.com/earlSt1/vtt-compendium-folders)
 
-## Installation
+## 2. Installation
 
-#### Manuelle
+#### 2.1 Manuelle
 
 A partir du manifeste JSON https://raw.githubusercontent.com/Nnayl/brigandyne2e-csb-sheets/master/module.json à renseigner directement dans l'URL du Manifest de l'interface d'installation de module dans Foundry VTT.
 
 <p align="center"><img src="https://github.com/Nnayl/brigandyne2e-csb-sheets/blob/media/url-du-manifest.jpg" width="400"></p>
 
-## Comment utiliser ce module ?
+## 3. Comment utiliser ce module ?
 
-#### Introduction
+#### 3.1 Introduction
 
 Le système **Custom System Builder** permet de créer des modèles (templates) d'acteurs et d'objets. A travers cette fonctionnalité vous trouverez dans ce module des Templates pour créer : 
 - Vos feuilles de PJ et de PNJ
@@ -31,18 +72,18 @@ Les Templates ne doivent pas être utilisés comme tel, il sèrvent à générer
 
 Vous y trouverez aussi des objets préfabriqués qui reposent sur les Templates mentionnés ci-dessus et qui possèdent déjà les formules permettant d'exploiter le système d'automatisation des valeurs calculées. Il est conseillé de créer votre contenu à partir de ces objets en les duplicant, notamment pour l'équipement.
 
-#### Contenu
+#### 3.2 Contenu
 
 Le module contient deux compendiums (Actors Templates et Item Templates)
 
 - **Actors Templates** contient deux acteurs (PJ Template et PNJ Template) sur lesquelles le système va s'appuyer pour générer les fiches de personnage joueur ou non-joueur. Ces fiches ne doivent pas être utilisées en tant que tel.
 - **Items Templates** contient huit objets qui serviront à générer votre équipement, vos sort et différents éléments de jeu.
 
-#### Récupérer les Templates
+#### 3.3 Récupérer les Templates
 
 Le module utilise **Compendium Folder** pour organiser les différents templates dans des dossiers. Lorsque vous récupérez le contenu des compendiums, veillez à utiliser la fonctionnalité d'import de **Compendium Folder** et assurez vous que les cases "Merge by name" et "Keep ID" soient cochées.
 
-#### Configuration
+#### 3.4 Configuration
 
 Avant toute chose, après avoir créé votre partie avec le système de jeu **Custom System Builder** et activé le module **Bigandyne 2 - CSB - Feuilles de Personnages**, il est nécessaire d'apporter quelques éléments à la configuration de la partie.
 
@@ -53,7 +94,7 @@ Dans "Configuration des options de la partie" > "Custom System Builder" il faut 
 
 <p align="center"><img src="../media/csb-config.jpg" height="200"></p>
 
-#### Créer un acteur
+#### 3.5 Créer un acteur
 
 Lorsque vous souhaitez créer un nouvel acteur, dans la fenêtre "Créer un acteur" il faut sélectionner le type "character". Cela génère une nouvelle fiche vierge dans laquelle il faut spécifier le Template à utiliser (PJ Template ou PNJ Template), puis cliquez sur le bouton de rafraichissement. Une fois fait, la nouvelle fiche est prête à être utilisée.
 
@@ -61,15 +102,15 @@ Lorsque vous souhaitez créer un nouvel acteur, dans la fenêtre "Créer un acte
 
 **Note** : Le champ Template n'est disponible que pour le MJ. Lorsque le Template d'origine est modifié il est nécessaire de rafraichir le Template sélectionné afin d'apporter les modifications sur la fiche.
 
-#### Créer un objet
+#### 3.6 Créer un objet
 
 Même procédure que la création d'un acteur, à la différence que le type à sélectionner est "equippableItem".
 
-#### Les objets préfabriqués
+#### 3.7 Les objets préfabriqués
 
 Pour facilité l'usage du module et permettre un bon fonctionnement de l'automatisation des valeurs calculées de la fiche de personnage en fonction des objets présents sur celle-ci, des objets préfabriqués sont disponibles. Ils embarquent l'ensemble des paramètrages nécessaire à l'automatisation. Plus de détail plus loin.
 
-#### Fonctionnement des fiches
+#### 3.8 Fonctionnement des fiches
 
 Les fiches, qu'elles soient des acteurs ou des objets, sont composées des mêmes éléments :
 - des champs de saisie qui permettent d'enregistrer les valeurs souhaitées
@@ -77,37 +118,41 @@ Les fiches, qu'elles soient des acteurs ou des objets, sont composées des même
 - des listes qui acceptent des objets créés à partir des Templates prédéfinis (La liste des Spécialités qui acceptent uniquement les objets créés avec le Template Spécialité, etc...)
 - des symboles de D20 de couleur rouge qui permettent d'effectuer des jets et d'afficher le résultat dans les messages.
 
-## 1. Feuille PJ
+## 4. Feuille PJ
 
 <p align="center"><img src="../media/pj-sheet.jpg" width="400"></p>
 
 La feuille de personnage est consitituée de 6 onglets. (Informations Génrales, Atouts, Equipements, Magie, Péripéties, Biographie).
 
-#### Informations Générales
+#### 4.1 Informations Générales
 
 On y retrouve la liste des compétences, les attributs secondaires, la monnaie du personnage et un récapitulatif des armes et protections équipées ainsi que les atouts disponibles.
 
-#### Atouts
+#### 4.2 Atouts
 
 Présente la liste des Spécialités et des Talents du personnage. Chacune des listes acceptent des objets créés à partir des Templates correspondants.
 
-#### Equipements
+#### 4.3 Equipements
 
 Présente l'équipements du personnage, catégorisés en quatre liste. (Armes, Armures, Vêtements, Consommables, Objets Divers)
 
-#### Magie
+#### 4.4 Grimoire
 
 Présente les limites de sorts par jour que le personnage peut lancer ainsi que tours, sortillèges et rituels en sa connaissance.
 
-#### Péripéties
+#### 4.5 Péripéties
 
 Cet onglet permet de suivre les afflictions dont souffre le personnage, tel que les maladies, les poisons, les séquelles et les troubles mentaux.
 
-#### Biographie
+#### 4.6 Biographie
 
 Ici sont compilées les informations correspondant à l'identité du personnage, ses caractéristiques physiques, ses vices & vertues, son expérience.
 
-## Feuille PNJ
+#### 4.7 MJ
+
+Cette section est réservé au MJ et lui permet de prendre des notes sur la fiche du personnage.
+
+## 5. Feuille PNJ
 
 <p align="center"><img src="../media/pnj-sheet.jpg" width="400"></p>
 
@@ -115,7 +160,7 @@ La feuille de personnage non-joueur a été simplifiée au regard de ce qui est 
 
 Les compétences, les tactiques, les Spécials et l'équipements sont disponibles dans une liste dynamique. En cliquant sur le "+" il est possible d'y rajouter des éléments.
 
-## Les Jets de dés
+## 6. Les Jets de dés
 
 Les fiches de PJ et de PNJ contiennent des symboles de D20 qui permettent d'effectuer les jets de compétences depuis les listes de compétences ou de combat depuis l'équipement équipé (uniquement pour les PJ).
 
@@ -125,7 +170,7 @@ Lors d'un jet de dés, une fenêtre s'affiche afin d'y renseigner les éventuels
 
 <p align="center"><img src="../media/modif-dialog.jpg" width="200"></p>
 
-#### Résultat de Compétence
+#### 6.1 Résultat de Compétence
 
 Le résultat du jet s'affiche dans la liste des messages et présente quelques informations.
 
@@ -137,7 +182,7 @@ Le résultat du jet s'affiche dans la liste des messages et présente quelques i
 
 <p align="center"><img src="../media/skill-result.jpg" width="200"></p>
 
-#### Résultat de Combat
+#### 6.2 Résultat de Combat
 
 Les jets de combats présente des informations complémentaires
 
@@ -148,17 +193,17 @@ Les jets de combats présente des informations complémentaires
 
 <p align="center"><img src="../media/fight-result.jpg" width="200"></p>
 
-#### Résultat de Magie
+#### 6.3 Résultat de Magie
 
 Les jets de magie, comme pour le combat, apporte le lien du sort utilisé ainsi que la description de ce dernier.
 
 <p align="center"><img src="../media/magic-result.jpg" width="200"></p>
 
-#### Objets liés
+#### 6.4 Objets liés
 
 Pour que les liens fonctionnent correctement dans les messages, il est nécessaire que les objets soient disponibles dans l'onglet "Objets" de la partie Foundry VTT.
 
-## Automatisation
+## 7 Automatisation
 
 Certaines valeures de la fiche de personnage sont calculées automatiquement. C'est notamment le cas pour :
 - La vitalité
@@ -170,7 +215,7 @@ Certaines valeures de la fiche de personnage sont calculées automatiquement. C'
 
 Pour que cela soit possible les objets qui sont déposés dans une fiche de personnage doivent contenir certains paramètres spécifiques que l'on définit à l'aide de l'Item Modifiers présent sur chaque objet.
 
-#### Paramétrage "Item Modifiers"
+#### 7.1 Paramétrage "Item Modifiers"
 
 Chaque fiche objet possède un bouton "Item Modifiers", hérité du système **Custom System Builder**, qui permet de paramétrer des formules qui vont impacter directement les données des fiches de personnage sur lesquelles les objets seront déposés.
 
@@ -182,7 +227,7 @@ Vous trouverez plus loin le détail des paramètres par type d'objet.
 
 Dans tous les cas, il est conseillé d'utiliser les objets préfabriqués qui sont disponibles dans le compendium Template. Ils embarquent déjà tout le paramétrage de l'"Item Modifiers" qui est nécessaire pour l'automatisation des valeurs calculées de la fiche de personnage.
 
-#### La fenêtre "Configure Modifiers"
+#### 7.2 La fenêtre "Configure Modifiers"
 
 Il s'agit d'un tableau d'éléments dont chaque élément contient quatre propriétés.
 - Prio. : Correspond à l'ordre de priorité de chargement
@@ -192,7 +237,7 @@ Il s'agit d'un tableau d'éléments dont chaque élément contient quatre propri
 
 <p align="center"><img src="../media/set-item-modifiers.jpg" width="250"></p>
 
-#### Objets préfabriqués
+#### 7.3 Objets préfabriqués
 
 Il existe 8 objets préfabriqués différents dont les paramètres Item Modifiers sont déjà renseignés. Voici la liste avec leurs implications :
 - Arme
@@ -214,7 +259,7 @@ Il existe 8 objets préfabriqués différents dont les paramètres Item Modifier
 
   Ci-dessous le détails des paramètres pour chacun des objets préfabriqués. **Reservé aux utilisateurs avertis**.
 
-##### Arme
+##### 7.3.1 Arme
 
 Les armes vont impacter l'encombrement général, l'encombrement d'objets équipés et l'initiative.
 
@@ -223,7 +268,7 @@ Les armes vont impacter l'encombrement général, l'encombrement d'objets équip
   - char_init         +   ```${${item_equiped ? item_init : 0}$}$```
   - current_hard_enc  +   ```${item_equiped ? item_enc : 0}$```
 
-##### Armure
+##### 7.3.2 Armure
 
 Les armures vont impacter l'encombrement générale, l'encombrement d'objets équipés, la protection, l'initiative et le mouvement.
 
@@ -234,14 +279,14 @@ Les armures vont impacter l'encombrement générale, l'encombrement d'objets éq
   - current_armor     +   ```${${item_equiped ? armor_value : 0}$}$```
   - skill_end_mou     +   ```${${item_equiped ? item_mou : 0}$}$```
 
-##### Consommable
+##### 7.3.3 Consommable
 
 Les consommables vont impacter l'encombrement général en fonction de la quantité.
 
 - Paramètres
   - current_enc       +   ```${item_enc * item_count}$```
 
-##### Contenant
+##### 7.3.4 Contenant
 
 Les contenants possède une cache à cocher uniquement visible par le MJ. Elle permet d'indiquer si l'objet prend une valeur à 0 lorsqu'il est équipé.
 
@@ -251,21 +296,21 @@ Les contenants vont impacter l'encombrement générale ainsi que permettre l'ext
   - current_enc       +   ```${item_enc_rel ? (item_equiped ? 0 : item_enc) : item_enc}$```
   - max_enc         +   ```${item_enc_rel ? (item_equiped ? item_enc_bonus : 0) : item_enc_bonus}$```
 
-##### Munition
+##### 7.3.5 Munition
 
 Les munitions vont impacter l'encombrement général en fonction de la quantité.
 
 - Paramètres
   - current_enc       +   ```${item_enc * item_count}$```
 
-##### Objet Divers
+##### 7.3.6 Objet Divers
 
 Les objets divers vont impacter l'encombrement général en fonction de la quantité.
 
 - Paramètres
   - current_enc       +   ```${item_enc * item_count}$```
 
-##### Peuple
+##### 7.3.7 Peuple
 
 Les peuples vont impacter la vitalité, le sang-froid et le destin.
 
@@ -274,21 +319,21 @@ Les peuples vont impacter la vitalité, le sang-froid et le destin.
   - max_sf       +   ```${bonus_sf}$```
   - max_fate     +   ```${nb_fate}$```
 
-##### Vêtement
+##### 7.3.8 Vêtement
 
 Les vêtement vont impacter l'encombrement général en fonction de la quantité. Si l'objet est équipé sont encombrement tombe à 0.
 
 - Paramètres
   - current_enc       +   ```${item_equiped ? item_enc * (item_count - 1) : item_enc * item_count}$```
 
-## Compatibilité
+## 8. Compatibilité
 
-#### Health Estimate
+#### 8.1 Health Estimate
 
 Afin que le système puisse effectuer correctement l'estimation de la vie du token, il est nécessaire de paramétrer Health Estimate comme suit :
 
 - Chemin des données de Points de vie : actor.system.attributeBar.current_hp
 
-#### Dice so Nice !
+#### 8.2 Dice so Nice !
 
 Le système est nativement compatible avec ce module, toute fois (pour une raison encore indéterminée) le module prend en compte le dé d'explosion même si il n'ya à pas de critique. Cela génère pour effet de bord de voir 3 dés 10 à l'écran au lieu de 2.
