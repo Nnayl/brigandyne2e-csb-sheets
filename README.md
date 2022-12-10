@@ -7,7 +7,7 @@ Dans l'attente du système de jeu Brigandyne 2 pour Foundry VTT, ce module perme
 - [1. Dépendance](#1-Dépendance)
 - [2. Installation](#2-Installation)
   - [2.1 Manuelle](#21-manuelle)
-- [3. Comment utiliser ce module ?](#3-comment-utiliser-ce-module)
+- [3. Comment utiliser ce module ?](#3-comment-utiliser-ce-module-)
   - [3.1 Introduction](#31-introduction)
   - [3.2 Contenu](#32-contenu)
   - [3.3 Récupérer les templates](#33-récupérer-les-templates)
