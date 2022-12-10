@@ -25,6 +25,8 @@ Le système **Custom System Builder** permet de créer des modèles (templates) 
 
 Les Templates ne doivent pas être utilisés comme tel, il sèrvent à générer de nouveau acteurs ou obets.
 
+Vous y trouverez aussi des objets préfabriqués qui reposent sur les Templates mentionnés ci-dessus et qui possèdent déjà les formules permettant d'exploiter le système d'automatisation des valeurs calculées. Il est conseillé de créer votre contenu à partir de ces objets en les duplicant, notamment pour l'équipement.
+
 #### Contenu
 
 Le module contient deux compendiums (Actors Templates et Item Templates)
@@ -58,6 +60,10 @@ Lorsque vous souhaitez créer un nouvel acteur, dans la fenêtre "Créer un acte
 #### Créer un objet
 
 Même procédure que la création d'un acteur, à la différence que le type à sélectionner est "equippableItem".
+
+#### Les objets préfabriqués
+
+Pour facilité l'usage du module et permettre un bon fonctionnement de l'automatisation des valeurs calculées de la fiche de personnage en fonction des objets présents sur celle-ci, des objets préfabriqués sont disponibles. Ils embarquent l'ensemble des paramètrages nécessaire à l'automatisation. Plus de détail plus loin.
 
 #### Fonctionnement des fiches
 
@@ -148,55 +154,130 @@ Les jets de magie, comme pour le combat, apporte le lien du sort utilisé ainsi 
 
 Pour que les liens fonctionnent correctement dans les messages, il est nécessaire que les objets soient disponibles dans l'onglet "Objets" de la partie Foundry VTT.
 
-## Objets et "Item Modifiers"
+## Automatisation
 
-Chaque fiche objet possède un bouton "Item Modifiers", hérité du système **Custom System Builder**, qui permet de renseigner des formules qui impacteront la fiche personnage en fonction des éléments présents sur la fiche objet. Voici comment les utiliser.
+Certaines valeures de la fiche de personnage sont calculées automatiquement. C'est notamment le cas pour :
+- La vitalité
+- Le sang-froid
+- L'initiative
+- La protection
+- La valeur actuelle d'une compétence
+- L'encombrement
+
+Pour que cela soit possible les objets qui sont déposés dans une fiche de personnage doivent contenir certains paramètres spécifiques que l'on définit à l'aide de l'Item Modifiers présent sur chaque objet.
+
+#### Paramétrage "Item Modifiers"
+
+Chaque fiche objet possède un bouton "Item Modifiers", hérité du système **Custom System Builder**, qui permet de paramétrer des formules qui vont impacter directement les données des fiches de personnage sur lesquelles les objets seront déposés.
+
+**Note** : Les limitations actuelles du système **Custom System Builder** font que les Items Modifiers ne sont accessibles que sur les fiches d'objets et non directement sur le Template. Ce qui implique qu'il est nécessaire de les paramétrer sur chaque objet. 
 
 <p align="center"><img src="../media/item-modifiers.jpg" height="200"></p>
 
-#### La fenêtre Configure Modifiers
+Vous trouverez plus loin le détail des paramètres par type d'objet.
+
+Dans tous les cas, il est conseillé d'utiliser les objets préfabriqués qui sont disponibles dans le compendium Template. Ils embarquent déjà tout le paramétrage de l'"Item Modifiers" qui est nécessaire pour l'automatisation des valeurs calculées de la fiche de personnage.
+
+#### La fenêtre "Configure Modifiers"
 
 Il s'agit d'un tableau d'éléments dont chaque élément contient quatre propriétés.
 - Prio. : Correspond à l'ordre de priorité de chargement
 - Key : Fait référence à la clé de l'élément à modifier sur la fiche de personnage
 - Op. : Indique quel opérateur utiliser
-- Value formula : Représente la formule qui sera exécutée
-
-Ci-après les propriétés à remplir. [X] doit être remplacé par la valeur que vous souhaitez appliquer, elle peut être négative.
-
-#### L'encombrement
-
-Peut-être appliqué sur tous les objets créés à partir des Templates Armes, Armures et Objets.
-
-- Encombrement
-  - Key : current_enc
-  - Op. : +
-  - Formula : ```${item_enc}$```
-
-#### Les Armures
-
-Avec le objets armures il est possible de calculer directement la protection d'un personnage, le malus d'initiative et de Mouvement.
-
-- Protection
-  - Key : current_armor
-  - Op. : +
-  - Formula : ```${item_equiped ? armor_value : 0}$```
-- Initiative
-  - Key : char_init
-  - Op. : +
-  - Formula : ```${item_equiped ? [X] : 0}$```
-- Mouvement
-  - Key : skill_end_mou
-  - Op. : +
-  - Formula : ```${item_equiped ? [X] : 0}$```
+- Value formula : Représente la formule qui sera évaluée
 
 <p align="center"><img src="../media/set-item-modifiers.jpg" width="250"></p>
 
-## Limitation
+Ci-après les propriétés à remplir. [X] doit être remplacé par la valeur que vous souhaitez appliquer, elle peut être négative.
 
-Du fait qu'un système est en cours de développement pour Brigandyne 2 je n'ai pas cherché à passer plus de temps sur les automatisations. Mis à part quelques valeurs calculées, il n'y a pas d'interaction dynamique entre les résultats de dés et les attributs dans les fiches. 
+#### Objets préfabriqués
 
-L'objectif n'est pas de créer un système avec tout son lot d'automatisation, mais simplement des ressources permettant de jouer à Brigandyne 2 sur Foundry VTT.
+Il existe 8 objets préfabriqués différents dont les paramètres Item Modifiers sont déjà renseignés. Voici la liste avec leurs implications :
+- Arme
+ - Encombrement, Initiative 
+- Armure
+  - Encombrement, Initiative, Protection, Mouvement
+- Consommable
+  - Encombrement
+- Contenant
+  - Encombrement, Extension d'encombrement
+- Munition
+  - Encombrement
+- Objet Divers
+  - Encombrement
+- Peuple
+  - Vitalité, Sang-froid, Destin
+- Vêtement
+  - Encombrement
+
+  Ci-dessous le détails des paramètres pour chacun des objets préfabriqués. **Reservé aux utilisateurs avertis**.
+
+##### Arme
+
+Les armes vont impacter l'encombrement général, l'encombrement d'objets équipés et l'initiative.
+
+- Paramètres
+  - current_enc       +   ```${item_enc}$```
+  - char_init         +   ```${${item_equiped ? item_init : 0}$}$```
+  - current_hard_enc  +   ```${item_equiped ? item_enc : 0}$```
+
+##### Armure
+
+Les armures vont impacter l'encombrement générale, l'encombrement d'objets équipés, la protection, l'initiative et le mouvement.
+
+- Paramètres
+  - current_enc       +   ```${item_enc}$```
+  - char_init         +   ```${${item_equiped ? item_init : 0}$}$```
+  - current_hard_enc  +   ```${item_equiped ? item_enc : 0}$```
+  - current_armor     +   ```${${item_equiped ? armor_value : 0}$}$```
+  - skill_end_mou     +   ```${${item_equiped ? item_mou : 0}$}$```
+
+##### Consommable
+
+Les consommables vont impacter l'encombrement général en fonction de la quantité.
+
+- Paramètres
+  - current_enc       +   ```${item_enc * item_count}$```
+
+##### Contenant
+
+Les contenants possède une cache à cocher uniquement visible par le MJ. Elle permet d'indiquer si l'objet prend une valeur à 0 lorsqu'il est équipé.
+
+Les contenants vont impacter l'encombrement générale ainsi que permettre l'extension du maximum de l'encombrement général.
+
+- Paramètres
+  - current_enc       +   ```${item_enc_rel ? (item_equiped ? 0 : item_enc) : item_enc}$```
+  - max_enc         +   ```${item_enc_rel ? (item_equiped ? item_enc_bonus : 0) : item_enc_bonus}$```
+
+##### Munition
+
+Les munitions vont impacter l'encombrement général en fonction de la quantité.
+
+- Paramètres
+  - current_enc       +   ```${item_enc * item_count}$```
+
+##### Objet Divers
+
+Les objets divers vont impacter l'encombrement général en fonction de la quantité.
+
+- Paramètres
+  - current_enc       +   ```${item_enc * item_count}$```
+
+##### Peuple
+
+Les peuples vont impacter la vitalité, le sang-froid et le destin.
+
+- Paramètres
+  - max_hp       +   ```${bonus_hp}$```
+  - max_sf       +   ```${bonus_sf}$```
+  - max_fate     +   ```${nb_fate}$```
+
+##### Vêtement
+
+Les vêtement vont impacter l'encombrement général en fonction de la quantité. Si l'objet est équipé sont encombrement tombe à 0.
+
+- Paramètres
+  - current_enc       +   ```${item_equiped ? item_enc * (item_count - 1) : item_enc * item_count}$```
 
 ## Compatibilité
 
