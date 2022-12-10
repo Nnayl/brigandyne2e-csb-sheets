@@ -18,12 +18,13 @@ Dans l'attente du système de jeu Brigandyne 2 pour Foundry VTT, ce module perme
   - [3.8 Fonctionnent des fiches](#38-fonctionnement-des-fiches)
 - [4. Feuille PJ](#4-feuille-pj)
   - [4.1 Information générales](#41-informations-générales)
-  - [4.2 Atouts](#42-atouts)
-  - [4.3 Equipements](#43-equipements)
-  - [4.4 Grimoire](#44-grimoire)
-  - [4.5 Péripéties](#45-péripéties)
-  - [4.6 Biographie](#46-biographie)
-  - [4.7 MJ](#47-mj)
+  - [4.2 Handicaps](#42-handicaps)
+  - [4.3 Atouts](#43-atouts)
+  - [4.4 Equipements](#44-equipements)
+  - [4.5 Grimoire](#45-grimoire)
+  - [4.6 Péripéties](#46-péripéties)
+  - [4.7 Biographie](#47-biographie)
+  - [4.8 MJ](#48-mj)
 - [5. Feuille PNJ](#5-feuille-pnj)
 - [6. Les jets de dés](#6-les-jets-de-dés)
   - [6.1 Résultat de compétence](#61-résultat-de-compétence)
@@ -120,7 +121,7 @@ Les fiches, qu'elles soient des acteurs ou des objets, sont composées des même
 
 ## 4. Feuille PJ
 
-La feuille de personnage est consitituée de 6 onglets. (Informations Génrales, Atouts, Equipements, Magie, Péripéties, Biographie).
+La feuille de personnage est consitituée de 8 onglets. (Informations Génrales, Handicaps, Atouts, Equipements, Magie, Péripéties, Biographie, MJ).
 
 #### 4.1 Informations Générales
 
@@ -128,37 +129,45 @@ On y retrouve la liste des compétences, les attributs secondaires, la monnaie d
 
 <p align="center"><img src="../media/pj-sheet-1.jpg" width="400"></p>
 
-#### 4.2 Atouts
+#### 4.2 Handicaps
+
+Liste les handicaps dont peut souffrir un personnage. Affamé, Assoifé, Démoralisé et Intimidé modifient automatiquement les dégats des armes de corps à corps et de tir, mais pas ceux de magie.
+
+**A noter** : Il n'y a pas d'interaction avec le token pour l'instant. 
+
+<p align="center"><img src="../media/pj-sheet-8.jpg" width="400"></p>
+
+#### 4.3 Atouts
 
 Présente la liste des Spécialités et des Talents du personnage. Chacune des listes acceptent des objets créés à partir des Templates correspondants.
 
 <p align="center"><img src="../media/pj-sheet-2.jpg" width="400"></p>
 
-#### 4.3 Equipements
+#### 4.4 Equipements
 
 Présente l'équipements du personnage, catégorisés en 7 listes. (Contenants, Munitions, Armes, Armures, Vêtements, Consommables, Objets Divers)
 
 <p align="center"><img src="../media/pj-sheet-3.jpg" width="400"></p>
 
-#### 4.4 Grimoire
+#### 4.5 Grimoire
 
 Présente les limites de sorts par jour que le personnage peut lancer ainsi que tours, sortillèges et rituels en sa connaissance.
 
 <p align="center"><img src="../media/pj-sheet-4.jpg" width="400"></p>
 
-#### 4.5 Péripéties
+#### 4.6 Péripéties
 
 Cet onglet permet de suivre les afflictions dont souffre le personnage, tel que les maladies, les poisons, les séquelles et les troubles mentaux.
 
 <p align="center"><img src="../media/pj-sheet-5.jpg" width="400"></p>
 
-#### 4.6 Biographie
+#### 4.7 Biographie
 
 Ici sont compilées les informations correspondant à l'identité du personnage, ses caractéristiques physiques, ses vices & vertues, son expérience.
 
 <p align="center"><img src="../media/pj-sheet-6.jpg" width="400"></p>
 
-#### 4.7 MJ
+#### 4.8 MJ
 
 Cette section est réservé au MJ et lui permet de prendre des notes sur la fiche du personnage.
 
