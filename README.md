@@ -136,7 +136,7 @@ Présente la liste des Spécialités et des Talents du personnage. Chacune des l
 
 #### 4.3 Equipements
 
-Présente l'équipements du personnage, catégorisés en quatre liste. (Armes, Armures, Vêtements, Consommables, Objets Divers)
+Présente l'équipements du personnage, catégorisés en 7 listes. (Contenants, Munitions, Armes, Armures, Vêtements, Consommables, Objets Divers)
 
 <p align="center"><img src="../media/pj-sheet-3.jpg" width="400"></p>
 
