@@ -300,13 +300,16 @@ Les consommables vont impacter l'encombrement général en fonction de la quanti
 
 ##### 7.3.4 Contenant
 
-Les contenants possède une cache à cocher uniquement visible par le MJ. Elle permet d'indiquer si l'objet prend une valeur à 0 lorsqu'il est équipé.
+Les contenants possède une case à cocher "Enc. Relatif ?" uniquement visible par le MJ. Elle permet d'indiquer si l'objet prend une valeur à 0 lorsqu'il est équipé.
 
-Les contenants vont impacter l'encombrement générale ainsi que permettre l'extension du maximum de l'encombrement général.
+Un contenant équipé et qui n'a pas pas un "Enc. Relatif ?" compte dans la charge équipé. Ce type de profil de contenant représente les objets qui peuvent en contenir d'autres mais qui restent malgré tout encombrant lorsque équipés.
+
+Les contenants vont impacter l'encombrement générale, l'encombrement équipé ainsi que permettre l'extension du maximum de l'encombrement général.
 
 - Paramètres
   - current_enc       +   ```${item_enc_rel ? (item_equiped ? 0 : item_enc) : item_enc}$```
-  - max_enc         +   ```${item_enc_rel ? (item_equiped ? item_enc_bonus : 0) : item_enc_bonus}$```
+  - max_enc           +   ```${item_enc_rel ? (item_equiped ? item_enc_bonus : 0) : item_enc_bonus}$```
+  - current_hard_enc  +   ```${item_enc_rel ? 0 : (item_equiped ? item_enc : 0)}$$```
 
 ##### 7.3.5 Munition
 
