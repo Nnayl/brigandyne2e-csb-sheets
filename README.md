@@ -4,9 +4,9 @@ Dans l'attente du système de jeu Brigandyne 2 pour Foundry VTT, ce module perme
 
 ## Index
 
-- [Dépendance](#Dépendance)
+- [Dépendance](#1.-Dépendance)
 
-## Dépendance
+## 1. Dépendance
 
 - Système [Custom System Builder](https://gitlab.com/custom-system-builder/custom-system-builder/-/tree/main)
 - Module [Compendium Folder](https://github.com/earlSt1/vtt-compendium-folders)
