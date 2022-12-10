@@ -188,8 +188,6 @@ Il s'agit d'un tableau d'éléments dont chaque élément contient quatre propri
 
 <p align="center"><img src="../media/set-item-modifiers.jpg" width="250"></p>
 
-Ci-après les propriétés à remplir. [X] doit être remplacé par la valeur que vous souhaitez appliquer, elle peut être négative.
-
 #### Objets préfabriqués
 
 Il existe 8 objets préfabriqués différents dont les paramètres Item Modifiers sont déjà renseignés. Voici la liste avec leurs implications :
