@@ -120,37 +120,49 @@ Les fiches, qu'elles soient des acteurs ou des objets, sont composées des même
 
 ## 4. Feuille PJ
 
-<p align="center"><img src="../media/pj-sheet.jpg" width="400"></p>
-
 La feuille de personnage est consitituée de 6 onglets. (Informations Génrales, Atouts, Equipements, Magie, Péripéties, Biographie).
 
 #### 4.1 Informations Générales
 
 On y retrouve la liste des compétences, les attributs secondaires, la monnaie du personnage et un récapitulatif des armes et protections équipées ainsi que les atouts disponibles.
 
+<p align="center"><img src="../media/pj-sheet-1.jpg" width="400"></p>
+
 #### 4.2 Atouts
 
 Présente la liste des Spécialités et des Talents du personnage. Chacune des listes acceptent des objets créés à partir des Templates correspondants.
+
+<p align="center"><img src="../media/pj-sheet-2.jpg" width="400"></p>
 
 #### 4.3 Equipements
 
 Présente l'équipements du personnage, catégorisés en quatre liste. (Armes, Armures, Vêtements, Consommables, Objets Divers)
 
+<p align="center"><img src="../media/pj-sheet-3.jpg" width="400"></p>
+
 #### 4.4 Grimoire
 
 Présente les limites de sorts par jour que le personnage peut lancer ainsi que tours, sortillèges et rituels en sa connaissance.
+
+<p align="center"><img src="../media/pj-sheet-4.jpg" width="400"></p>
 
 #### 4.5 Péripéties
 
 Cet onglet permet de suivre les afflictions dont souffre le personnage, tel que les maladies, les poisons, les séquelles et les troubles mentaux.
 
+<p align="center"><img src="../media/pj-sheet-5.jpg" width="400"></p>
+
 #### 4.6 Biographie
 
 Ici sont compilées les informations correspondant à l'identité du personnage, ses caractéristiques physiques, ses vices & vertues, son expérience.
 
+<p align="center"><img src="../media/pj-sheet-6.jpg" width="400"></p>
+
 #### 4.7 MJ
 
 Cette section est réservé au MJ et lui permet de prendre des notes sur la fiche du personnage.
+
+<p align="center"><img src="../media/pj-sheet-7.jpg" width="400"></p>
 
 ## 5. Feuille PNJ
 
