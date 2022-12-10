@@ -4,7 +4,7 @@ Dans l'attente du système de jeu Brigandyne 2 pour Foundry VTT, ce module perme
 
 ## Index
 
-- [Dépendance](##Dépendance)
+- [Dépendance](#Dépendance)
 
 ## Dépendance
 
