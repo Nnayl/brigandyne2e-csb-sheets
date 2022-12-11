@@ -119,7 +119,7 @@ Pour facilité l'usage du module et permettre un bon fonctionnement de l'automat
 
 Les fiches, qu'elles soient des acteurs ou des objets, sont composées des mêmes éléments :
 - des champs de saisie qui permettent d'enregistrer les valeurs souhaitées
-- des champs non modifiables qui contiennent des valeurs calculées (les points de vitalité, de sang-froid, etc...)
+- des champs non modifiables qui contiennent des valeurs calculées à partir des Objets intégrés à la fiche (les points de vitalité, de sang-froid, de destins, l'initiative, la protection, la valeur acutelle d'une compétence, l'encombrement.)
 - des listes qui acceptent des objets créés à partir des Templates prédéfinis (La liste des Spécialités qui acceptent uniquement les objets créés avec le Template Spécialité, etc...)
 - des symboles de D20 de couleur rouge qui permettent d'effectuer des jets et d'afficher le résultat dans les messages.
 
@@ -233,6 +233,7 @@ Pour que les liens fonctionnent correctement dans les messages, il est nécessai
 Certaines valeures de la fiche de personnage sont calculées automatiquement. C'est notamment le cas pour :
 - La vitalité
 - Le sang-froid
+- Le destin
 - L'initiative
 - La protection
 - La valeur actuelle d'une compétence
