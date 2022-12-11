@@ -82,6 +82,10 @@ Le module contient deux compendiums (Actors Templates et Item Templates)
 
 #### 3.3 Récupérer les Templates
 
+Afin que les Templates soient disponibles lors de la création des fiches, il est nécessaire d'importer le contenu des compendiums dans la parie afin qu'ils soient accessibles depuis les onglets Acteurs et Objets.
+
+Cette opération est à répéter après chaque mise à jour du module afin d'appoter les dernières modifications sur les Templates présents dans la partie.
+
 Le module utilise **Compendium Folder** pour organiser les différents templates dans des dossiers. Lorsque vous récupérez le contenu des compendiums, veillez à utiliser la fonctionnalité d'import de **Compendium Folder** et assurez vous que les cases "Merge by name" et "Keep ID" soient cochées.
 
 #### 3.4 Configuration
