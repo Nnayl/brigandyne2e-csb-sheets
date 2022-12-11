@@ -82,7 +82,7 @@ Le module contient deux compendiums (Actors Templates et Item Templates)
 
 #### 3.3 Récupérer les Templates
 
-Afin que les Templates soient disponibles lors de la création des fiches, il est nécessaire d'importer le contenu des compendiums dans la parie afin qu'ils soient accessibles depuis les onglets Acteurs et Objets.
+Afin que les Templates soient disponibles lors de la création des fiches, il est nécessaire d'importer le contenu des compendiums dans la parie afin que les templates soient présent dans les onglets Acteurs et Objets.
 
 Cette opération est à répéter après chaque mise à jour du module afin d'appoter les dernières modifications sur les Templates présents dans la partie.
 
