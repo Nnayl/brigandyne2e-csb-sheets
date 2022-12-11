@@ -228,7 +228,7 @@ Les jets de magie, comme pour le combat, apporte le lien du sort utilisé ainsi 
 
 Pour que les liens fonctionnent correctement dans les messages, il est nécessaire que les objets soient disponibles dans l'onglet "Objets" de la partie Foundry VTT.
 
-## 7 Automatisation
+## 7. Automatisation
 
 Certaines valeures de la fiche de personnage sont calculées automatiquement. C'est notamment le cas pour :
 - La vitalité
