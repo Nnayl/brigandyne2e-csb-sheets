@@ -113,9 +113,11 @@ Lorsque vous souhaitez créer un nouvel acteur, dans la fenêtre "Créer un acte
 
 Même procédure que la création d'un acteur, à la différence que le type à sélectionner est "equippableItem".
 
+**Note : Toute fois, il est fortement conseillé d'utiliser les [Objets Préfabriqués](#37-les-objets-préfabriqués) pour créer vos objets.**
+
 #### 3.7 Les objets préfabriqués
 
-Pour facilité l'usage du module et permettre un bon fonctionnement de l'automatisation des valeurs calculées de la fiche de personnage en fonction des objets présents sur celle-ci, des objets préfabriqués sont disponibles. Ils embarquent l'ensemble des paramètrages nécessaire à l'automatisation. Plus de détail plus loin.
+Pour facilité l'usage du module et permettre un bon fonctionnement de l'automatisation des valeurs calculées de la fiche de personnage en fonction des objets présents sur celle-ci, des objets préfabriqués sont disponibles. Ils embarquent l'ensemble des paramètrages nécessaires à l'automatisation. Plus de détail plus loin.
 
 #### 3.8 Fonctionnement des fiches
 
