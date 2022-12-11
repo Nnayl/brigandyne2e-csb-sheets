@@ -88,6 +88,8 @@ Cette opération est à répéter après chaque mise à jour du module afin d'ap
 
 Le module utilise **Compendium Folder** pour organiser les différents templates dans des dossiers. Lorsque vous récupérez le contenu des compendiums, veillez à utiliser la fonctionnalité d'import de **Compendium Folder** et assurez vous que les cases "Merge by name" et "Keep ID" soient cochées.
 
+<p align="center"><img src="../media/compendium_import.png" height="200"></p>
+
 #### 3.4 Configuration
 
 Avant toute chose, après avoir créé votre partie avec le système de jeu **Custom System Builder** et activé le module **Bigandyne 2 - CSB - Feuilles de Personnages**, il est nécessaire d'apporter quelques éléments à la configuration de la partie.
