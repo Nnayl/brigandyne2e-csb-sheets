@@ -119,7 +119,7 @@ Pour facilité l'usage du module et permettre un bon fonctionnement de l'automat
 
 Les fiches, qu'elles soient des acteurs ou des objets, sont composées des mêmes éléments :
 - des champs de saisie qui permettent d'enregistrer les valeurs souhaitées
-- des champs non modifiables qui contiennent des valeurs calculées à partir des Objets intégrés à la fiche (les points de vitalité, de sang-froid, de destins, l'initiative, la protection, la valeur acutelle d'une compétence, l'encombrement.)
+- des champs non modifiables qui contiennent des valeurs calculées à partir des Objets intégrés à la fiche (les points de vitalité, de sang-froid, de destins, l'initiative, la protection, la valeur acutelle d'une compétence, l'encombrement et les limites de magie)
 - des listes qui acceptent des objets créés à partir des Templates prédéfinis (La liste des Spécialités qui acceptent uniquement les objets créés avec le Template Spécialité, etc...)
 - des symboles de D20 de couleur rouge qui permettent d'effectuer des jets et d'afficher le résultat dans les messages.
 
@@ -238,6 +238,7 @@ Certaines valeures de la fiche de personnage sont calculées automatiquement. C'
 - La protection
 - La valeur actuelle d'une compétence
 - L'encombrement
+- Les limites de magie
 
 Pour que cela soit possible les objets qui sont déposés dans une fiche de personnage doivent contenir certains paramètres spécifiques que l'on définit à l'aide de l'Item Modifiers présent sur chaque objet.
 
