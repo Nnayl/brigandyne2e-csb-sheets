@@ -6,7 +6,8 @@ Dans l'attente du système de jeu Brigandyne 2 pour Foundry VTT, ce module perme
 
 - [1. Dépendance](#1-Dépendance)
 - [2. Installation](#2-Installation)
-  - [2.1 Manuelle](#21-manuelle)
+  - [2.1 Standard](#21-standard)
+  - [2.2 Manuelle](#22-manuelle)
 - [3. Comment utiliser ce module ?](#3-comment-utiliser-ce-module-)
   - [3.1 Introduction](#31-introduction)
   - [3.2 Contenu](#32-contenu)
@@ -46,6 +47,9 @@ Dans l'attente du système de jeu Brigandyne 2 pour Foundry VTT, ce module perme
 - [8. Compatibilité](#8-compatibilité)
   - [8.1 Health Estimate](#81-health-estimate)
   - [8.2 Dice So Nice !](#82-dice-so-nice)
+- [9. F.A.Q](#9-faq)
+  - [Pourquoi les objets que je dépose dans la fiche de personnage ne sont pas visibles ?](#91-pourquoi-les-objets-que-je-dépose-dans-la-fiche-de-personnage-ne-sont-pas-visibles)
+  - [Pourquoi les valeurs calculées ne sont pas misess à jour avec mes obejts ?](#92-pourquoi-les-valeurs-calculées-ne-sont-pas-mise-à-jour-avec-mes-objets)
 
 
 ## 1. Dépendance
@@ -55,7 +59,11 @@ Dans l'attente du système de jeu Brigandyne 2 pour Foundry VTT, ce module perme
 
 ## 2. Installation
 
-#### 2.1 Manuelle
+#### 2.1 Standard
+
+Le module est diponible depuis l'explorateur de modules à installer de l'interface Foundry VTT. (Brigandyne 2 - CSB - Feuilles de personnages)
+
+#### 2.2 Manuelle
 
 A partir du manifeste JSON https://raw.githubusercontent.com/Nnayl/brigandyne2e-csb-sheets/master/module.json à renseigner directement dans l'URL du Manifest de l'interface d'installation de module dans Foundry VTT.
 
@@ -371,3 +379,15 @@ Afin que le système puisse effectuer correctement l'estimation de la vie du tok
 #### 8.2 Dice so Nice !
 
 Le système est nativement compatible avec ce module, toute fois (pour une raison encore indéterminée) le module prend en compte le dé d'explosion même si il n'ya à pas de critique. Cela génère pour effet de bord de voir 3 dés 10 à l'écran au lieu de 2.
+
+## 9. F.A.Q
+
+#### 9.1 Pourquoi les objets que je dépose dans la fiche de personnage ne sont pas visibles ?
+
+Cela arrive lorsque l'importation des Templates et Objets préfabriqués depuis les compendiums n'est pas correctement effectuée. Le contenu des compendiums doit être importés à l'aide des fonctionnalités d'import du module **Compendium Folders**. La procédure adéquate est décrite ici [3.3 Récupérer les templates](#33-récupérer-les-templates)
+
+#### 9.2 Pourquoi les valeurs calculées ne sont pas mise à jour avec mes objets ?
+
+Pour que les valeurs calculées soient mises à jour, il est nécessaire d'utiliser les Objets préfabriqués qui embarquent l'ensemble des formules d'automatisations. Voir la section [3.7 Les Objets Préfabriqués](#37-les-objets-préfabriqués) pour plus de détails.
+
+L'intégration des formules d'automatisations dans les Objets est décrite à la section [7. Automatisation](#7-automatisation)
