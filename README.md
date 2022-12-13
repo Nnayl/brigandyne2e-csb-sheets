@@ -1,6 +1,22 @@
 # Brigandyne 2 - CSB - Feuilles de Personnages
 
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />Ce(tte) œuvre est mise à disposition selon les termes de la <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Licence Creative Commons Attribution - Pas d’Utilisation Commerciale - Partage dans les Mêmes Conditions 4.0 International</a>.
+
+## Informations
+
 Dans l'attente du système de jeu Brigandyne 2 pour Foundry VTT, ce module permet d'intégrer au système de jeu **Custom System Builder** (CSB) les feuilles de PJ et PNJ pour le JDR Brigandyne 2 ainsi que les templates nécessaires à la création d'objets.
+
+## Brigandyne 2 édition
+
+Brigandyne 2e est un jeu de rôle créé par James Tornade et autoédité.
+
+#### Introduction
+
+**Brigandyne** est un jeu de rôle de dark fantasy, ancré dans une atmosphère « chair et sang », c’est-à-dire rude, sanglante, où l’on ne fait pas de cadeau. L’action se déroule sur Thalios, un vaste continent aux multiples facettes, peuplé en majorité d’humains qui ne brillent ni par leur bonté ni par leur ouverture d’esprit. Partout on lutte pour le pouvoir et l’argent, et dans les salons feutrés de l’aristocratie se décide le sort des soldats pataugeant dans la boue des champs de bataille. Certains individus plus malins que les autres y voient des opportunités pour gagner leur vie autrement que par le labeur : des spadassins orgueilleux, des roublards à la langue bien pendue, des mercemages aux dons étranges, des chasseurs venus du froid ou même des moines défroqués. Ce sont les personnages que vont principalement interpréter les joueurs : des voyageurs, des aventuriers, des lames à louer.
+
+#### Inspiration
+
+_Warhammer 1 et 2, Terres de Légende, Donjons & Dragons, Légendes des Contrées Oubliées, Mutant Chronicles, Tranchons & Traquons, Te Deum pour un massacre, Striscia, Pendragon, Sombre, Savage Worlds, Zweihänder, les livres dont vous êtes le héros (Épée de Légende, Défis Fantastiques et Dragon d’Or), beaucoup de livres d’Histoire, toutes les incarnations du magazine Casus Belli, Wikipédia, Game of Thrones, Gagner la Guerre de Jean-Philippe Jaworski, le dictionnaire des synonymes du CRISCO, différents dictionnaires de rimes, Les fables de La Fontaine, le forum Casus NO_
 
 ## Index
 
@@ -73,11 +89,11 @@ A partir du manifeste JSON https://raw.githubusercontent.com/Nnayl/brigandyne2e-
 
 #### 3.1 Introduction
 
-Le système **Custom System Builder** permet de créer des modèles (templates) d'acteurs et d'objets. A travers cette fonctionnalité vous trouverez dans ce module des Templates pour créer : 
+Le système **Custom System Builder** permet de créer des modèles (templates) d'Acteurs et d'Objets. A travers cette fonctionnalité vous trouverez dans ce module les outils pour créer : 
 - Vos feuilles de PJ et de PNJ
 - Les objets (équipements, atouts, sorts, etc...) qui pourront être rattachés aux PJ
 
-Les Templates ne doivent pas être utilisés comme tel, il sèrvent à générer de nouveau acteurs ou obets.
+Les Templates ne doivent pas être utilisés comme tel, il sèrvent à générer de nouveau Acteurs ou Obets.
 
 Vous y trouverez aussi des objets préfabriqués qui reposent sur les Templates mentionnés ci-dessus et qui possèdent déjà les formules permettant d'exploiter le système d'automatisation des valeurs calculées. Il est conseillé de créer votre contenu à partir de ces objets en les duplicant, notamment pour l'équipement.
 
@@ -86,26 +102,28 @@ Vous y trouverez aussi des objets préfabriqués qui reposent sur les Templates 
 Le module contient deux compendiums (Actors Templates et Item Templates)
 
 - **Actors Templates** contient deux acteurs (PJ Template et PNJ Template) sur lesquelles le système va s'appuyer pour générer les fiches de personnage joueur ou non-joueur. Ces fiches ne doivent pas être utilisées en tant que tel.
-- **Items Templates** contient huit objets qui serviront à générer votre équipement, vos sort et différents éléments de jeu.
+- **Items Templates** contient 21 objets qui serviront à générer votre équipement, vos sort et différents éléments de jeu.
+  - 12 Templates
+  - 9 Objets Préfabriqués
 
 #### 3.3 Récupérer les Templates
 
-Afin que les Templates soient disponibles lors de la création des fiches, il est nécessaire d'importer le contenu des compendiums dans la parie afin que les templates soient présent dans les onglets Acteurs et Objets.
+Il est nécessaire d'importer le contenu des compendiums dans votre monde afin que les Templates soient disponibles lors de la création des fiches, vous les retrouverez dans les onglets Acteurs et Objets.
 
 Cette opération est à répéter après chaque mise à jour du module afin d'appoter les dernières modifications sur les Templates présents dans la partie.
 
-Le module utilise **Compendium Folder** pour organiser les différents templates dans des dossiers. Lorsque vous récupérez le contenu des compendiums, veillez à utiliser la fonctionnalité d'import de **Compendium Folder** et assurez vous que les cases "Merge by name" et "Keep ID" soient cochées.
+Le module utilise **Compendium Folder** pour organiser les différents templates dans des répertoires. Lorsque vous récupérez le contenu des compendiums, veillez à utiliser la fonctionnalité d'import de **Compendium Folder** et assurez vous que les cases **"Merge by name"** et **"Keep ID"** soient cochées.
 
 <p align="center"><img src="../media/compendium-import.png" height="200"></p>
 
 #### 3.4 Configuration
 
-Avant toute chose, après avoir créé votre partie avec le système de jeu **Custom System Builder** et activé le module **Bigandyne 2 - CSB - Feuilles de Personnages**, il est nécessaire d'apporter quelques éléments à la configuration de la partie.
+Avant toute chose, après avoir créé votre partie avec le système de jeu **Custom System Builder** et activé le module **Bigandyne 2 - CSB - Feuilles de Personnages**, il est nécessaire d'apporter quelques éléments à la configuration du monde.
 
 Dans "Configuration des options de la partie" > "Custom System Builder" il faut renseigner dans les champs :
-- Initiative Formula : char_init
-- CSS Style file : modules\brigandyne2e-csb-sheets\brigandyne2-sheets.css (à saisir à la main, l'explorateur de fichier de Foundry VTT ne prend pas en charge les CSS)
-- Roll Icons : dice-d20
+- **Initiative Formula** : char_init
+- **CSS Style file** : modules\brigandyne2e-csb-sheets\brigandyne2-sheets.css (à saisir à la main, l'explorateur de fichier de Foundry VTT ne prend pas en charge les CSS)
+- **Roll Icons** : dice-d20
 
 <p align="center"><img src="../media/csb-config.jpg" height="200"></p>
 
@@ -115,17 +133,17 @@ Lorsque vous souhaitez créer un nouvel acteur, dans la fenêtre "Créer un acte
 
 <p align="center"><img src="../media/new-actor.jpg" height="150"><img src="../media/use-template.jpg" height="150"></p>
 
-**Note** : Le champ Template n'est disponible que pour le MJ. Lorsque le Template d'origine est modifié il est nécessaire de rafraichir le Template sélectionné afin d'apporter les modifications sur la fiche.
+**Note** : Le champ Template n'est disponible que pour le MJ. Lorsque le Template d'origine est modifié suite à une mise à jour, il est nécessaire de rafraichir le Template sélectionné afin d'apporter les modifications sur la fiche. Le bouton **Reload all character sheets** présent sur le Template permet de mettre à jour toutes les fiches correspondantes.
 
 #### 3.6 Créer un objet
 
-Même procédure que la création d'un acteur, à la différence que le type à sélectionner est "equippableItem".
+Même procédure que la création d'un acteur, à la différence que le type à sélectionner est "equippableItem" lors de la création d'un nouvel Objet.
 
 **Note : Toute fois, il est fortement conseillé d'utiliser les [Objets Préfabriqués](#37-les-objets-préfabriqués) pour créer vos objets.**
 
 #### 3.7 Les objets préfabriqués
 
-Pour facilité l'usage du module et permettre un bon fonctionnement de l'automatisation des valeurs calculées de la fiche de personnage en fonction des objets présents sur celle-ci, des objets préfabriqués sont disponibles. Ils embarquent l'ensemble des paramètrages nécessaires à l'automatisation. Plus de détail plus loin.
+Pour faciliter l'usage du module et permettre un bon fonctionnement de l'automatisation des valeurs calculées qui sont présentes sur les fiches de personnages lorsque des objets sont associés à celle-ci, des Objets Préfabriqués sont mis à disposition. Ils embarquent l'ensemble des paramètrages nécessaires à l'automatisation. Plus de détail dans la section [7. Automatisation](#7-automatisation)
 
 #### 3.8 Fonctionnement des fiches
 
@@ -133,7 +151,7 @@ Les fiches, qu'elles soient des acteurs ou des objets, sont composées des même
 - des champs de saisie qui permettent d'enregistrer les valeurs souhaitées
 - des champs non modifiables qui contiennent des valeurs calculées à partir des Objets intégrés à la fiche (les points de vitalité, de sang-froid, de destins, l'initiative, la protection, la valeur acutelle d'une compétence, l'encombrement et les limites de magie)
 - des listes qui acceptent des objets créés à partir des Templates prédéfinis (La liste des Spécialités qui acceptent uniquement les objets créés avec le Template Spécialité, etc...)
-- des symboles de D20 de couleur rouge qui permettent d'effectuer des jets et d'afficher le résultat dans les messages.
+- des symboles de D20 de couleur rouge qui permettent d'effectuer des jets et d'afficher le résultat dans les listes des messages du monde.
 
 ## 4. Feuille PJ
 
@@ -167,13 +185,13 @@ Présente l'équipements du personnage, catégorisés en 7 listes. (Contenants, 
 
 #### 4.5 Grimoire
 
-Présente les limites de sorts par jour que le personnage peut lancer ainsi que tours, sortillèges et rituels en sa connaissance.
+Présente les limites de sorts par jour que le personnage peut lancer ainsi queles domaines, tours, sortillèges et rituels en sa connaissance.
 
 <p align="center"><img src="../media/pj-sheet-4.jpg" width="400"></p>
 
 #### 4.6 Péripéties
 
-Cet onglet permet de suivre les afflictions dont souffre le personnage, tel que les maladies, les poisons, les séquelles et les troubles mentaux.
+Cet onglet permet de suivre les afflictions dont souffre le personnage, tel que les maladies, les poisons, les séquelles, troubles mentaux et les mutations.
 
 <p align="center"><img src="../media/pj-sheet-5.jpg" width="400"></p>
 
@@ -195,13 +213,13 @@ Cette section est réservé au MJ et lui permet de prendre des notes sur la fich
 
 La feuille de personnage non-joueur a été simplifiée au regard de ce qui est disponible dans Brigandyne 2. Elle comprend toutes les informations essentielles nécessaires à son utilisation.
 
-Les compétences, les tactiques, les Spécials et l'équipements sont disponibles dans une liste dynamique. En cliquant sur le "+" il est possible d'y rajouter des éléments.
+Les compétences, les tactiques, les Spécificités et l'Equipements sont disponibles dans une liste dynamique. En cliquant sur le "+" il est possible d'y rajouter des éléments.
 
 ## 6. Les Jets de dés
 
-Les fiches de PJ et de PNJ contiennent des symboles de D20 qui permettent d'effectuer les jets de compétences depuis les listes de compétences ou de combat depuis l'équipement équipé (uniquement pour les PJ).
+Les fiches de PJ et de PNJ contiennent des symboles de D20 qui permettent d'effectuer les jets de compétences depuis les listes de compétences, ou de combat depuis l'équipement équipé (uniquement pour les PJ).
 
-**!! ATTENTION !!** - Pour que le symbole du D20 soit visible il faut bien configurer le système, voir Configuration
+**!! ATTENTION !!** - Pour que le symbole du D20 soit visible il faut bien configurer le système, voir la section [3.4 Configuration](#34-configuration)
 
 Lors d'un jet de dés, une fenêtre s'affiche afin d'y renseigner les éventuels modificateurs et avantages/désavantages.
 
@@ -252,19 +270,19 @@ Certaines valeures de la fiche de personnage sont calculées automatiquement. C'
 - L'encombrement
 - Les limites de magie
 
-Pour que cela soit possible les objets qui sont déposés dans une fiche de personnage doivent contenir certains paramètres spécifiques que l'on définit à l'aide de l'Item Modifiers présent sur chaque objet.
+Pour que cela soit possible les objets qui sont déposés dans une fiche de personnage doivent contenir certains paramètres spécifiques que l'on définit à l'aide de l'**Item Modifiers** présent sur chaque objet.
 
 #### 7.1 Paramétrage "Item Modifiers"
 
-Chaque fiche objet possède un bouton "Item Modifiers", hérité du système **Custom System Builder**, qui permet de paramétrer des formules qui vont impacter directement les données des fiches de personnage sur lesquelles les objets seront déposés.
+Chaque fiche objet possède un bouton **"Item Modifiers"**, hérité du système **Custom System Builder**, qui permet de paramétrer des formules qui vont impacter directement les données des fiches de personnage sur lesquelles les objets seront déposés.
 
-**Note** : Les limitations actuelles du système **Custom System Builder** font que les Items Modifiers ne sont accessibles que sur les fiches d'objets et non directement sur le Template. Ce qui implique qu'il est nécessaire de les paramétrer sur chaque objet. 
+**Note** : Les limitations actuelles du système **Custom System Builder** font que les Items Modifiers ne sont accessibles que sur les fiches d'objets et non directement sur le Template. Ce qui implique qu'il est nécessaire de les paramétrer sur chaque objet. D'où la mise à disposition des [Objets Préfabriqués](#37-les-objets-préfabriqués).
 
 <p align="center"><img src="../media/item-modifiers.jpg" height="200"></p>
 
 Vous trouverez plus loin le détail des paramètres par type d'objet.
 
-Dans tous les cas, il est conseillé d'utiliser les objets préfabriqués qui sont disponibles dans le compendium Template. Ils embarquent déjà tout le paramétrage de l'"Item Modifiers" qui est nécessaire pour l'automatisation des valeurs calculées de la fiche de personnage.
+Dans tous les cas, il est conseillé d'utiliser les objets préfabriqués qui sont disponibles dans le compendium Template. Ils embarquent déjà tout le paramétrage de l'**"Item Modifiers"** qui est nécessaire à l'automatisation des valeurs calculées de la fiche de personnage.
 
 #### 7.2 La fenêtre "Configure Modifiers"
 
@@ -278,7 +296,7 @@ Il s'agit d'un tableau d'éléments dont chaque élément contient quatre propri
 
 #### 7.3 Objets préfabriqués
 
-Il existe 8 objets préfabriqués différents dont les paramètres Item Modifiers sont déjà renseignés. Voici la liste avec leurs implications :
+Il existe 8 objets préfabriqués différents dont les paramètres **Item Modifiers** sont déjà renseignés. Voici la liste avec leurs implications :
 - Arme
   - Encombrement, Initiative 
 - Armure
@@ -327,7 +345,7 @@ Les consommables vont impacter l'encombrement général en fonction de la quanti
 
 ##### 7.3.4 Contenant
 
-Les contenants possède une case à cocher "Enc. Relatif ?" uniquement visible par le MJ. Elle permet d'indiquer si l'objet prend une valeur à 0 lorsqu'il est équipé.
+Les contenants possèdent une case à cocher "Enc. Relatif ?" uniquement visible par le MJ. Elle permet d'indiquer si l'objet prend une valeur à 0 lorsqu'il est équipé.
 
 Un contenant équipé et qui n'a pas pas un "Enc. Relatif ?" compte dans la charge équipé. Ce type de profil de contenant représente les objets qui peuvent en contenir d'autres mais qui restent malgré tout encombrant lorsque équipés.
 
