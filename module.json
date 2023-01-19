@@ -2,7 +2,7 @@
     "id": "brigandyne2e-csb-sheets",
     "title": "Brigandyne 2 - CSB - Feuilles de personnages",
     "description": "Permet d'intégrer au système de jeu Custom System Builder (CSB) les feuilles de PJ et PNJ pour le JDR Brigandyne 2.",
-    "version": "1.1.5",
+    "version": "1.1.6",
     "authors": [
       {
         "name": "Nnayl"
@@ -51,5 +51,5 @@
    ],
    "url": "https://github.com/Nnayl/brigandyne2e-csb-sheets",
    "manifest": "https://raw.githubusercontent.com/Nnayl/brigandyne2e-csb-sheets/master/module.json",
-   "download": "https://github.com/Nnayl/brigandyne2e-csb-sheets/archive/refs/tags/1.1.5.zip"
+   "download": "https://github.com/Nnayl/brigandyne2e-csb-sheets/archive/refs/tags/1.1.6.zip"
   }

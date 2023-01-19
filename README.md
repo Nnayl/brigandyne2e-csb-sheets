@@ -334,7 +334,7 @@ Les armures vont impacter l'encombrement générale, l'encombrement d'objets éq
   - char_init         +   ```${${item_equiped ? item_init : 0}$}$```
   - current_hard_enc  +   ```${item_equiped ? item_enc : 0}$```
   - current_armor     +   ```${${item_equiped ? armor_value : 0}$}$```
-  - skill_end_mou     +   ```${${item_equiped ? item_mou : 0}$}$```
+  - armor_mod_mou     +   ```${${item_equiped ? item_mou : 0}$}$```
 
 ##### 7.3.3 Consommable
 
