@@ -60,6 +60,7 @@ _Warhammer 1 et 2, Terres de Légende, Donjons & Dragons, Légendes des Contrée
     - [7.3.6 Objet divers](#736-objet-divers)
     - [7.3.7 Peuple](#737-peuple)
     - [7.3.8 Vêtement](#738-vêtement)
+    - [7.3.9 Trouble Mental](#739-trouble-mental)
 - [8. Compatibilité](#8-compatibilité)
   - [8.1 Health Estimate](#81-health-estimate)
   - [8.2 Dice So Nice !](#82-dice-so-nice)
@@ -296,7 +297,7 @@ Il s'agit d'un tableau d'éléments dont chaque élément contient quatre propri
 
 #### 7.3 Objets préfabriqués
 
-Il existe 8 objets préfabriqués différents dont les paramètres **Item Modifiers** sont déjà renseignés. Voici la liste avec leurs implications :
+Il existe plusieurs objets préfabriqués différents dont les paramètres **Item Modifiers** sont déjà renseignés. Voici la liste avec leurs implications :
 - Arme
   - Encombrement, Initiative 
 - Armure
@@ -313,6 +314,8 @@ Il existe 8 objets préfabriqués différents dont les paramètres **Item Modifi
   - Vitalité, Sang-froid, Destin
 - Vêtement
   - Encombrement
+- Trouble Mental
+  - Stress maximum
 
   Ci-dessous le détails des paramètres pour chacun des objets préfabriqués. **Reservé aux utilisateurs avertis**.
 
@@ -385,6 +388,13 @@ Les vêtement vont impacter l'encombrement général en fonction de la quantité
 
 - Paramètres
   - current_enc       +   ```${item_equiped ? item_enc * (item_count - 1) : item_enc * item_count}$```
+
+##### 7.3.9 Trouble Mental
+
+Les troubles mentaux vont impacter directement le stress maximum du joueur. Si l'objet est équipé, le stress maximal est réduit par la valeur d'instabilité définie par le trouble mental
+
+- Paramètres
+  - max_sf      -   ```${ item_madness }$```
 
 ## 8. Compatibilité
 
