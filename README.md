@@ -162,7 +162,7 @@ La feuille de personnage est consitituée de 8 onglets. (Informations Génrales,
 
 #### 4.1 Informations Générales
 
-On y retrouve la liste des compétences, les attributs secondaires, la monnaie du personnage et un récapitulatif des armes et protections équipées ainsi que les atouts disponibles.
+On y retrouve la liste des compétences, les attributs secondaires, les options de combats, un récapitulatif des armes et protections équipées ainsi que les atouts disponibles.
 
 <p align="center"><img src="../media/pj-sheet-1.jpg" width="400"></p>
 
@@ -182,7 +182,7 @@ Présente la liste des Spécialités et des Talents du personnage. Chacune des l
 
 #### 4.4 Equipements
 
-Présente l'équipements du personnage, catégorisés en 7 listes. (Contenants, Munitions, Armes, Armures, Vêtements, Consommables, Objets Divers)
+Présente la monnaie du personnage ainsi que son équipement, regroupé en 7 catégories. (Contenants, Munitions, Armes, Armures, Vêtements, Consommables, Objets Divers)
 
 <p align="center"><img src="../media/pj-sheet-3.jpg" width="400"></p>
 
