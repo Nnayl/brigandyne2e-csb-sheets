@@ -3,7 +3,7 @@
 .roll_lose { color: darkred; font-weight: bold;}
 .text_result { text-align: center;}
 .roll_skill {font-size: 16px;}
-.weapon_details { font-size: 12px; font-style: italic;}
+.weapon_details { font-size: 12px; font-style: italic; text-align: justify;}
 .icon-20 {font-size: 20px;}
 .font-18 {font-size: 18px;}
 
