@@ -342,6 +342,9 @@ Les armures vont impacter l'encombrement générale, l'encombrement d'objets éq
   - version 1.1.6
   - armor_mod_mou     +   ```${item_equiped ? item_mou : 0}$```
   - ~~skill_end_mou     +   ```${item_equiped ? item_mou : 0}$```~~
+  - has_full_armor    +   ```${and(equalText(armor_note, 'Complète'), item_equiped) ? 1 : 0}$```
+  - has_helmet        +   ```${and(equalText(armor_note, 'Casque'), item_equiped) ? 1 : 0}$```
+  - has_shield        +   ```${and(equalText(armor_note, 'Bouclier'), item_equiped) ? 1 : 0}$```
 
 ##### 7.3.3 Consommable
 
