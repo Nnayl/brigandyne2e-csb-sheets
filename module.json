@@ -18,10 +18,7 @@
         {
           "id": "custom-system-builder",
           "type": "system",
-          "manifest": "https://gitlab.com/custom-system-builder/custom-system-builder/-/raw/main/system.json",
-          "compatibity" : {
-            "verified": "2.2.0"
-          }
+          "manifest": "https://gitlab.com/custom-system-builder/custom-system-builder/-/raw/main/system.json"
         }
       ],
       "requires" : [
