@@ -254,6 +254,7 @@ Les jets de combats présente des informations complémentaires
 - La tactique utilisée par la cible
 
 **Note** : Lorsqu'aucune cible n'est sélectionnée, la mention "Aucune cible sélectionnée" est visible
+
 **Note** : Le ciblage ne fonctionne que pour les token de fiche PNJ
 
 <p align="center"><img src="../media/fight-result.jpg" width="200"></p>
