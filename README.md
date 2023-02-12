@@ -246,8 +246,15 @@ Les jets de combats présente des informations complémentaires
 
 - Le lien de l'arme utilisée
 - Le nom de l'arme
+- La tactique utilisée par le personnage
 - les dégats de l'arme ainsi qu'entre paranthèse les dégâts calculés (RU + Dégâts Arme)
 - L'allonge de l'arme
+- Les spécificités de l'arme
+- Le calcul automatique des dégâts infligés et reçus lorsque une cible est sélectionnée
+- La tactique utilisée par la cible
+
+**Note** : Lorsqu'aucune cible n'est sélectionnée, la mention "Aucune cible sélectionnée" est visible
+**Note** : Le ciblage ne fonctionne que pour les token de fiche PNJ
 
 <p align="center"><img src="../media/fight-result.jpg" width="200"></p>
 
