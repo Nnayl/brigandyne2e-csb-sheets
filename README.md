@@ -18,7 +18,7 @@ Brigandyne 2e est un jeu de rôle créé par James Tornade et autoédité.
 
 #### Inspiration
 
-_Warhammer 1 et 2, Terres de Légende, Donjons & Dragons, Légendes des Contrées Oubliées, Mutant Chronicles, Tranchons & Traquons, Te Deum pour un massacre, Striscia, Pendragon, Sombre, Savage Worlds, Zweihänder, les livres dont vous êtes le héros (Épée de Légende, Défis Fantastiques et Dragon d’Or), beaucoup de livres d’Histoire, toutes les incarnations du magazine Casus Belli, Wikipédia, Game of Thrones, Gagner la Guerre de Jean-Philippe Jaworski, le dictionnaire des synonymes du CRISCO, différents dictionnaires de rimes, Les fables de La Fontaine, le forum Casus NO_
+_Warhammer 1 et 2, Terres de Légende, Donjons & Dragons, Légendes des Contrées Oubliées, Mutant Chronicles, Tranchons & Traquons, Te Deum pour un massacre, Striscia, Pendragon, Sombre, Savage Worlds, Zweihänder, les livres dont vous êtes le héros (Épée de Légende, Défis Fantastiques et Dragon d’Or), beaucoup de livres d’Histoire, toutes les incarnations du magazine Casus Belli, Wikipédia, Game of Thrones, Gagner la Guerre de Jean-Philippe Jaworski, le dictionnaire des synonymes du CRISCO, différents dictionnaires de rimes, Les fables de La Fontaine, le forum Casus NO._
 
 ## Index
 
@@ -53,7 +53,7 @@ _Warhammer 1 et 2, Terres de Légende, Donjons & Dragons, Légendes des Contrée
 - [7. Automatisation](#7-automatisation)
   - [7.1 Paramétrage "Item Modifiers"](#71-paramétrage-item-modifiers)
   - [7.2 La fenêtre "Configure Modifiers"](#72-la-fenêtre-configure-modifiers)
-  - [7.3 Objets préfabriqués](#73-objets-préfabriqués)
+  - [7.3 Template d'Objets](#73-template-dobjets)
     - [7.3.1 Arme](#731-arme)
     - [7.3.2 Armure](#732-armure)
     - [7.3.3 Consommable](#733-consommable)
@@ -115,9 +115,7 @@ Il est nécessaire d'importer le contenu des compendiums dans votre monde afin q
 
 Cette opération est à répéter après chaque mise à jour du module afin d'appoter les dernières modifications sur les Templates présents dans la partie.
 
-Le module utilise **Compendium Folder** pour organiser les différents templates dans des répertoires. Lorsque vous récupérez le contenu des compendiums, veillez à utiliser la fonctionnalité d'import de **Compendium Folder** et assurez vous que les cases **"Merge by name"** et **"Keep ID"** soient cochées.
-
-<p align="center"><img src="../media/compendium-import.png" height="200"></p>
+**Veillez à cocher "Garder l'ID des documents ?" lors de l'import**
 
 #### 3.4 Configuration
 
@@ -142,11 +140,11 @@ Lorsque vous souhaitez créer un nouvel acteur, dans la fenêtre "Créer un acte
 
 Même procédure que la création d'un acteur, à la différence que le type à sélectionner est "equippableItem" lors de la création d'un nouvel Objet.
 
-**Note : Toute fois, il est fortement conseillé d'utiliser les [Objets Préfabriqués](#37-les-objets-préfabriqués) pour créer vos objets.**
-
 #### 3.7 Les objets préfabriqués
 
-Pour faciliter l'usage du module et permettre un bon fonctionnement de l'automatisation des valeurs calculées qui sont présentes sur les fiches de personnages lorsque des objets sont associés à celle-ci, des Objets Préfabriqués sont mis à disposition. Ils embarquent l'ensemble des paramètrages nécessaires à l'automatisation. Plus de détail dans la section [7. Automatisation](#7-automatisation)
+Afin de facilité l'usage du module, des objets préfabriqués sont disponibles pour les MJ, avec chacun une icone lui correspondant. Le MJ peut soit dupliquer les objets préfabriqués mis à sa disposition, soit se référer aux templates afin de créer ses propres objets.
+
+_Historiquemement, ils étaient là pour faciliter l'usage du module et permettre un bon fonctionnement de l'automatisation des valeurs calculées qui sont présentes sur les fiches de personnages lorsque des objets sont associés à celle-ci. Ils embarquaient l'ensemble des paramètrages nécessaires à l'automatisation qui sont désormais disponibles directement dans les templates_
 
 #### 3.8 Fonctionnement des fiches
 
@@ -281,19 +279,11 @@ Certaines valeures de la fiche de personnage sont calculées automatiquement. C'
 - L'encombrement
 - Les limites de magie
 
-Pour que cela soit possible les objets qui sont déposés dans une fiche de personnage doivent contenir certains paramètres spécifiques que l'on définit à l'aide de l'**Item Modifiers** présent sur chaque objet.
+Afin d'assurer le bon fonctionnement de l'automatisation de ces valeurs, les templates associés aux objets embarquent des formules qui lui sont propres via le concept d'**Item Modifiers** du système **Custom System Builder**.
 
 #### 7.1 Paramétrage "Item Modifiers"
 
-Chaque fiche objet possède un bouton **"Item Modifiers"**, hérité du système **Custom System Builder**, qui permet de paramétrer des formules qui vont impacter directement les données des fiches de personnage sur lesquelles les objets seront déposés.
-
-**Note** : Les limitations actuelles du système **Custom System Builder** font que les Items Modifiers ne sont accessibles que sur les fiches d'objets et non directement sur le Template. Ce qui implique qu'il est nécessaire de les paramétrer sur chaque objet. D'où la mise à disposition des [Objets Préfabriqués](#37-les-objets-préfabriqués).
-
-<p align="center"><img src="../media/item-modifiers.jpg" height="200"></p>
-
-Vous trouverez plus loin le détail des paramètres par type d'objet.
-
-Dans tous les cas, il est conseillé d'utiliser les objets préfabriqués qui sont disponibles dans le compendium Template. Ils embarquent déjà tout le paramétrage de l'**"Item Modifiers"** qui est nécessaire à l'automatisation des valeurs calculées de la fiche de personnage.
+Chaque template d'objet possède un bouton **"Item Modifiers"**, hérité du système **Custom System Builder**, qui permet de paramétrer des formules qui vont impacter directement les données des fiches de personnage sur lesquelles les objets seront déposés. (Vous trouverez plus loin le détail des paramètres par type d'objet.)
 
 #### 7.2 La fenêtre "Configure Modifiers"
 
@@ -305,9 +295,9 @@ Il s'agit d'un tableau d'éléments dont chaque élément contient quatre propri
 
 <p align="center"><img src="../media/set-item-modifiers.jpg" width="250"></p>
 
-#### 7.3 Objets préfabriqués
+#### 7.3 Template d'Objets
 
-Il existe plusieurs objets préfabriqués différents dont les paramètres **Item Modifiers** sont déjà renseignés. Voici la liste avec leurs implications :
+Il existe plusieurs template d'objets qui utilisent les paramètres **Item Modifiers**. Voici la liste avec leurs implications :
 - Arme
   - Encombrement, Initiative 
 - Armure
@@ -327,7 +317,7 @@ Il existe plusieurs objets préfabriqués différents dont les paramètres **Ite
 - Trouble Mental
   - Stress maximum
 
-  Ci-dessous le détails des paramètres pour chacun des objets préfabriqués. **Reservé aux utilisateurs avertis**.
+  Ci-dessous le détails des paramètres pour chacun des templates. **Reservé aux utilisateurs avertis**.
 
 ##### 7.3.1 Arme
 
@@ -347,9 +337,8 @@ Les armures vont impacter l'encombrement générale, l'encombrement d'objets éq
   - char_init         +   ```${item_equiped ? item_init : 0}$```
   - current_hard_enc  +   ```${item_equiped ? item_enc : 0}$```
   - current_armor     +   ```${item_equiped ? armor_value : 0}$```
-  - version 1.1.6
+  - skill_end_per     +   ```${item_equiped ? 0 : 0}$```
   - armor_mod_mou     +   ```${item_equiped ? item_mou : 0}$```
-  - ~~skill_end_mou     +   ```${item_equiped ? item_mou : 0}$```~~
   - has_full_armor    +   ```${and(equalText(armor_note, 'Complète'), item_equiped) ? 1 : 0}$```
   - has_helmet        +   ```${and(equalText(armor_note, 'Casque'), item_equiped) ? 1 : 0}$```
   - has_shield        +   ```${and(equalText(armor_note, 'Bouclier'), item_equiped) ? 1 : 0}$```
@@ -431,6 +420,4 @@ Cela arrive lorsque l'importation des Templates et Objets préfabriqués depuis 
 
 #### 9.2 Pourquoi les valeurs calculées ne sont pas mise à jour avec mes objets ?
 
-Pour que les valeurs calculées soient mises à jour, il est nécessaire d'utiliser les Objets préfabriqués qui embarquent l'ensemble des formules d'automatisations. Voir la section [3.7 Les Objets Préfabriqués](#37-les-objets-préfabriqués) pour plus de détails.
-
-L'intégration des formules d'automatisations dans les Objets est décrite à la section [7. Automatisation](#7-automatisation)
+Pour que les valeurs calculées soient mises à jour, il est nécessaire d'utiliser les Templates d'Objets fournis par le module et de d'assurer que le template à bien était mis à jour sur l'objet en question.  Plus de détails sur l'automatisation à la rubrique [7. Automatisation](#7-automatisation)
