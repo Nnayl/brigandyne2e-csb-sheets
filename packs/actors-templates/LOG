@@ -1,14 +1,14 @@
-2023/09/15-16:02:19.422 b38 Recovering log #22
-2023/09/15-16:02:19.428 b38 Delete type=0 #22
-2023/09/15-16:02:19.428 b38 Delete type=3 #20
-2023/09/15-16:38:59.473 53ac Level-0 table #27: started
-2023/09/15-16:38:59.478 53ac Level-0 table #27: 106225 bytes OK
-2023/09/15-16:38:59.479 53ac Delete type=0 #25
-2023/09/15-16:38:59.491 53ac Manual compaction at level-0 from '!actors!VW8HdzLOZqZhhsNL' @ 72057594037927935 : 1 .. '!folders!vsADK217vMZQKdcm' @ 0 : 0; will stop at '!folders!B96QeFPoiNdylbC7' @ 30 : 0
-2023/09/15-16:38:59.491 53ac Compacting 1@0 + 1@1 files
-2023/09/15-16:38:59.495 53ac Generated table #28@0: 3 keys, 34522 bytes
-2023/09/15-16:38:59.495 53ac Compacted 1@0 + 1@1 files => 34522 bytes
-2023/09/15-16:38:59.496 53ac compacted to: files[ 0 1 0 0 0 0 0 ]
-2023/09/15-16:38:59.496 53ac Delete type=2 #9
-2023/09/15-16:38:59.497 53ac Delete type=2 #27
-2023/09/15-16:38:59.529 53ac Manual compaction at level-0 from '!folders!B96QeFPoiNdylbC7' @ 30 : 0 .. '!folders!vsADK217vMZQKdcm' @ 0 : 0; will stop at (end)
+2023/11/12-20:18:55.842 679c Recovering log #36
+2023/11/12-20:18:55.846 679c Delete type=0 #36
+2023/11/12-20:18:55.847 679c Delete type=3 #35
+2023/11/12-20:39:30.990 8e84 Level-0 table #40: started
+2023/11/12-20:39:30.994 8e84 Level-0 table #40: 31425 bytes OK
+2023/11/12-20:39:30.996 8e84 Delete type=0 #38
+2023/11/12-20:39:31.010 8e84 Manual compaction at level-0 from '!actors!VW8HdzLOZqZhhsNL' @ 72057594037927935 : 1 .. '!actors!b2fR3UPDq72Yhwu1' @ 0 : 0; will stop at '!folders!vsADK217vMZQKdcm' @ 43 : 0
+2023/11/12-20:39:31.010 8e84 Compacting 1@0 + 1@1 files
+2023/11/12-20:39:31.014 8e84 Generated table #41@0: 2 keys, 31353 bytes
+2023/11/12-20:39:31.014 8e84 Compacted 1@0 + 1@1 files => 31353 bytes
+2023/11/12-20:39:31.015 8e84 compacted to: files[ 0 1 0 0 0 0 0 ]
+2023/11/12-20:39:31.016 8e84 Delete type=2 #28
+2023/11/12-20:39:31.016 8e84 Delete type=2 #40
+2023/11/12-20:39:31.036 8e84 Manual compaction at level-0 from '!folders!vsADK217vMZQKdcm' @ 43 : 0 .. '!actors!b2fR3UPDq72Yhwu1' @ 0 : 0; will stop at (end)
