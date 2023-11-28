@@ -286,7 +286,7 @@ Chaque template d'objet possède un bouton **"Item Modifiers"**, hérité du sys
 
 **Breaking Changes**
 
-Avant la 1.6.0 les **Item Modifiers** étaient directement inscrit dans les objets eux mêmes, d'où l'intérêt des **Objets Préfabriqués**. Maintenant qu'on les retrouve dans les Templates, il est nécessaire de supprimer les **Item Modifiers** de tous les objets créé avant la version 1.6.0, sans quoi il est possible que certaines valeurs calculées soient doublées.
+Avant la 1.6.0 les **Item Modifiers** étaient directement inscris dans les objets eux mêmes, d'où l'intérêt des **Objets Préfabriqués**. Maintenant qu'on les retrouve dans les Templates, il est nécessaire de supprimer les **Item Modifiers** de tous les objets créés avant la version 1.6.0, sans quoi il est possible que certaines valeurs calculées soient doublées.
 
 #### 7.2 La fenêtre "Configure Modifiers"
 
@@ -427,4 +427,4 @@ Pour que les valeurs calculées soient mises à jour, il est nécessaire d'utili
 
 #### 9.3 Pourquoi les valeurs calculées de certains objets sont doublées ?
 
-Cela arrive si vos objets ont été créés avant la version 1.6.0 de ce module. Pour corriger le problème il suffit de supprimer toutes les valeurs présentes dans la partie **Item Modifiers** de l'objet en question. En effet, ces données sont désormais, depuis la version 1.6.0, directement présente dans le Template associé à l'objet. Plus de détails à la rubrique [7.1 Paramétrage "Item Modifiers"](#71-paramétrage-item-modifiers)
+Cela arrive si vos objets ont été créés avant la version 1.6.0 de ce module. Pour corriger le problème il suffit de supprimer toutes les valeurs présentes dans la partie **Item Modifiers** de l'objet en question. En effet ces données sont désormais, depuis la version 1.6.0, directement présentes dans le Template associé à l'objet. Plus de détails à la rubrique [7.1 Paramétrage "Item Modifiers"](#71-paramétrage-item-modifiers)
