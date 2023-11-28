@@ -284,6 +284,10 @@ Afin d'assurer le bon fonctionnement de l'automatisation de ces valeurs, les tem
 
 Chaque template d'objet possède un bouton **"Item Modifiers"**, hérité du système **Custom System Builder**, qui permet de paramétrer des formules qui vont impacter directement les données des fiches de personnage sur lesquelles les objets seront déposés. (Vous trouverez plus loin le détail des paramètres par type d'objet.)
 
+**Breaking Changes**
+
+Avant la 1.6.0 les **Item Modifiers** étaient directement inscrit dans les objets eux mêmes, d'où l'intérêt des **Objets Préfabriqués**. Maintenant qu'on les retrouve dans les Templates, il est nécessaire de supprimer les **Item Modifiers** de tous les objets créé avant la version 1.6.0, sans quoi il est possible que certaines valeurs calculées soient doublées.
+
 #### 7.2 La fenêtre "Configure Modifiers"
 
 Il s'agit d'un tableau d'éléments dont chaque élément contient quatre propriétés.
@@ -420,3 +424,7 @@ Cela arrive lorsque l'importation des Templates et Objets préfabriqués depuis 
 #### 9.2 Pourquoi les valeurs calculées ne sont pas mise à jour avec mes objets ?
 
 Pour que les valeurs calculées soient mises à jour, il est nécessaire d'utiliser les Templates d'Objets fournis par le module et de d'assurer que le template à bien était mis à jour sur l'objet en question.  Plus de détails sur l'automatisation à la rubrique [7. Automatisation](#7-automatisation)
+
+#### 9.3 Pourquoi les valeurs calculées de certains objets sont doublées ?
+
+Cela arrive si vos objets ont été créés avant la version 1.6.0 de ce module. Pour corriger le problème il suffit de supprimer toutes les valeurs présentes dans la partie **Item Modifiers** de l'objet en question. En effet, ces données sont désormais, depuis la version 1.6.0, directement présente dans le Template associé à l'objet. Plus de détails à la rubrique [7.1 Paramétrage "Item Modifiers"](#71-paramétrage-item-modifiers)
