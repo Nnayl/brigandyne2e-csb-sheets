@@ -69,6 +69,7 @@ _Warhammer 1 et 2, Terres de Légende, Donjons & Dragons, Légendes des Contrée
 - [9. F.A.Q](#9-faq)
   - [Pourquoi les objets que je dépose dans la fiche de personnage ne sont pas visibles ?](#91-pourquoi-les-objets-que-je-dépose-dans-la-fiche-de-personnage-ne-sont-pas-visibles)
   - [Pourquoi les valeurs calculées ne sont pas misess à jour avec mes obejts ?](#92-pourquoi-les-valeurs-calculées-ne-sont-pas-mise-à-jour-avec-mes-objets)
+  - [Pourquoi les valeurs calculées de certains objets sont doublées ?](#93-pourquoi-les-valeurs-calculées-de-certains-objets-sont-doublées)
 
 
 ## 1. Dépendance
