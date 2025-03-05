@@ -1,14 +1,14 @@
-2025/02/24-12:47:04.183 6838 Recovering log #131
-2025/02/24-12:47:04.187 6838 Delete type=0 #131
-2025/02/24-12:47:04.187 6838 Delete type=3 #129
-2025/02/24-12:48:09.084 8de4 Level-0 table #136: started
-2025/02/24-12:48:09.089 8de4 Level-0 table #136: 140080 bytes OK
-2025/02/24-12:48:09.090 8de4 Delete type=0 #134
-2025/02/24-12:48:09.099 8de4 Manual compaction at level-0 from '!actors!VW8HdzLOZqZhhsNL' @ 72057594037927935 : 1 .. '!actors!b2fR3UPDq72Yhwu1' @ 0 : 0; will stop at '!actors!b2fR3UPDq72Yhwu1' @ 50 : 1
-2025/02/24-12:48:09.099 8de4 Compacting 1@0 + 1@1 files
-2025/02/24-12:48:09.106 8de4 Generated table #137@0: 2 keys, 140080 bytes
-2025/02/24-12:48:09.106 8de4 Compacted 1@0 + 1@1 files => 140080 bytes
-2025/02/24-12:48:09.107 8de4 compacted to: files[ 0 1 0 0 0 0 0 ]
-2025/02/24-12:48:09.107 8de4 Delete type=2 #112
-2025/02/24-12:48:09.107 8de4 Delete type=2 #136
-2025/02/24-12:48:09.109 8de4 Manual compaction at level-0 from '!actors!b2fR3UPDq72Yhwu1' @ 50 : 1 .. '!actors!b2fR3UPDq72Yhwu1' @ 0 : 0; will stop at (end)
+2025/03/05-21:36:12.912 ae48 Recovering log #147
+2025/03/05-21:36:12.915 ae48 Delete type=0 #147
+2025/03/05-21:36:12.916 ae48 Delete type=3 #146
+2025/03/05-22:12:42.028 31bc Level-0 table #151: started
+2025/03/05-22:12:42.032 31bc Level-0 table #151: 139407 bytes OK
+2025/03/05-22:12:42.033 31bc Delete type=0 #149
+2025/03/05-22:12:42.037 31bc Manual compaction at level-0 from '!actors!VW8HdzLOZqZhhsNL' @ 72057594037927935 : 1 .. '!actors!b2fR3UPDq72Yhwu1' @ 0 : 0; will stop at '!actors!b2fR3UPDq72Yhwu1' @ 52 : 0
+2025/03/05-22:12:42.037 31bc Compacting 1@0 + 1@1 files
+2025/03/05-22:12:42.043 31bc Generated table #152@0: 2 keys, 139263 bytes
+2025/03/05-22:12:42.043 31bc Compacted 1@0 + 1@1 files => 139263 bytes
+2025/03/05-22:12:42.044 31bc compacted to: files[ 0 1 0 0 0 0 0 ]
+2025/03/05-22:12:42.045 31bc Delete type=2 #137
+2025/03/05-22:12:42.045 31bc Delete type=2 #151
+2025/03/05-22:12:42.047 31bc Manual compaction at level-0 from '!actors!b2fR3UPDq72Yhwu1' @ 52 : 0 .. '!actors!b2fR3UPDq72Yhwu1' @ 0 : 0; will stop at (end)
